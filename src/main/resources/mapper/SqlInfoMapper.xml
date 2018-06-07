@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lynhaw.g4test.mybatis.mapper.SqlInfoMapper">
+
+    <select id="findsqlInfo" resultType="com.lynhaw.g4test.mybatis.beans.SqlInfoBean">
+        select * from TB_YX_G4TEST_SQLINFO WHERE  id = #{id}
+    </select>
+
+    <select id="findlimitsqlInfo" resultType="com.lynhaw.g4test.mybatis.beans.SqlInfoBean">
+        select * from TB_YX_G4TEST_SQLINFO limit #{limitStart},#{limitEnd}
+    </select>
+    <insert id="addsqlInfo" parameterType="com.lynhaw.g4test.mybatis.beans.SqlInfoBean">
+        insert into TB_YX_G4TEST_SQLINFO (sqlmode,sqlconninfo,sqlusername,sqlpassword)
+        values (#{sqlmode,jdbcType=VARCHAR},#{sqlconninfo,jdbcType=VARCHAR},#{sqlusername,jdbcType=VARCHAR},#{sqlpassword,jdbcType=VARCHAR}
+        )
+    </insert>
+
+</mapper>
