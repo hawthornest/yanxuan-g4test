@@ -50,6 +50,7 @@
             min-height: 1px;
             width: 20%;
             margin:10px 0px 0px 0px;
+            height: 20px;
         }
         .pagination {
             display: inline-block;
@@ -85,22 +86,24 @@
 <body>
 <h2>对接gotest数据库管理页面</h2>
 <hr>
-数据库地址:
-<input type="text" name="数据库地址" id="sqladdressid">
-<button type="button" id="selectButton" onchange="javascript:joinPage();" onclick="selectSqlInfo(0,10,document.getElementById('sqladdressid').value)">查询</button>
-<button type="button" id="addSqlButton" onclick="showaddSqlInfo('light')">新增</button>
+<div align="center" style="font-weight:bold;font-size:20px; color:#080808">
+    <label>数据库地址:</label>
+    <input type="text" name="数据库地址" style="width: 400px;height: 25px;" id="sqladdressid">
+    <button type="button" style="font-weight:bold;font-size:20px; color:#080808" id="selectButton" onchange="javascript:joinPage();" onclick="selectSqlInfo(0,10,document.getElementById('sqladdressid').value)">查询</button>
+    <button type="button" style="font-weight:bold;font-size:20px; color:#080808" id="addSqlButton" onclick="showaddSqlInfo('light')">新增</button>
+</div>
 <div id="light" class="white_content">
     <div class="close"><a href="javascript:void(0)" onclick="hide('light')"> 关闭</a></div>
     <div>
         <label class="labelcontrol">数据库类型:</label>
         <select id="sqlmodeid" class="Inputcontrol">
-            <option value="mysql">mysql</option>
+            <option value="mysql" style="font-size:10px">mysql</option>
             <option value="ddb">ddb</option>
         </select>
     </div>
     <div>
         <label class="labelcontrol">数据库连接信息:</label>
-        <input type="text"  class="Inputcontrol" id="sqlinfoid" name="数据库连接信息">
+        <input type="text"  class="Inputcontrol" id="sqlinfoid" name="数据库连接信息" style="width: 50%">
     </div>
     <div>
         <label class="labelcontrol">用户名:</label>
@@ -139,7 +142,6 @@
                 {
                     lbody += "<li class=\"pagination\"><a  id='pagecoutid"+temp+"'onclick=\"javascript:selectSqlInfo("+(temp-1)*10+","+10+");\">"+temp+"</a></li>";
                 }
-
                 $("#paginationinfo").append(lbody)
             })
         }
