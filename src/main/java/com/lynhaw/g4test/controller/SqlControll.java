@@ -3,6 +3,7 @@ package com.lynhaw.g4test.controller;
 import com.alibaba.fastjson.JSONObject;
 import com.lynhaw.g4test.mybatis.SqlInfoService.SqlService;
 import com.lynhaw.g4test.mybatis.beans.SqlInfoBean;
+import io.swagger.annotations.ApiOperation;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,6 +21,8 @@ public class SqlControll {
     @Autowired
     private SqlService sqlService;
     Logger logger = Logger.getLogger(SqlControll.class);
+
+    @ApiOperation(value="根据id查询数据库信息", notes="")
     @RequestMapping("/getSqlInfo")
     public List<SqlInfoBean> getSqlInfo(int id)
     {
@@ -28,6 +31,8 @@ public class SqlControll {
         return sqlInfoBeans;
     }
 
+
+    @ApiOperation(value="根据连接信息查询数据库信息", notes="")
     @RequestMapping("/getSqlInfobyinfo")
     public String getSqlInfobyinfo(String sqlconninfo)
     {
@@ -40,6 +45,8 @@ public class SqlControll {
         return jsonResult.toJSONString();
     }
 
+
+    @ApiOperation(value="按照页数查询数据库信息", notes="")
     @RequestMapping("/getLimitSqlInfo")
     public  String getLimitSqlInfo(int limitStart,int limitEnd)
     {
@@ -53,6 +60,8 @@ public class SqlControll {
         return jsonResult.toJSONString();
     }
 
+
+    @ApiOperation(value="新增维护的数据库信息", notes="")
     @RequestMapping("/insertSql")
     public int insertSqlInfo(String sqlmode,String sqlconninfo,String sqlusername,String sqlpassword)
     {

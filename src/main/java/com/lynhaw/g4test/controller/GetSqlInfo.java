@@ -6,6 +6,7 @@ import com.lynhaw.g4test.mybatis.SqlInfoService.SqlService;
 import com.lynhaw.g4test.mybatis.beans.SqlInfoBean;
 import com.lynhaw.g4test.service.MySqlOper;
 import com.lynhaw.g4test.service.PublicMethod;
+import io.swagger.annotations.ApiOperation;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -28,6 +29,8 @@ public class GetSqlInfo {
 
     Logger logger = Logger.getLogger(GetSqlInfo.class);
 
+
+    @ApiOperation(value="根据数据库维护的数据库表信息查询", notes="")
     @RequestMapping("/selectSqlIfo")
     public String GetSelectSqlIfo(@RequestParam(defaultValue = "999999999")int id, @RequestParam(defaultValue = "999999999")String inputSql)
     {
@@ -39,6 +42,8 @@ public class GetSqlInfo {
         return result;
     }
 
+
+    @ApiOperation(value="根据数据库维护的数据库表信息update、insert", notes="")
     @RequestMapping("/writeSqlIfo")
     public String updateSqlIfo(@RequestParam(defaultValue = "999999999")int id,@RequestParam(defaultValue = "999999999")String writeSql)
     {
