@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.regex.Pattern;
 
 /**
  * @Author yyhu3
@@ -65,7 +66,26 @@ public class SqlControll {
     @RequestMapping("/insertSql")
     public int insertSqlInfo(String sqlmode,String sqlconninfo,String sqlusername,String sqlpassword)
     {
-        int insertResult = sqlService.insert(sqlmode,sqlconninfo,sqlusername,sqlpassword);
+        String content = "I am noob " ;
+        String pattern="";
+        int insertResult = 0;
+        if (sqlmode.equals("mysql"))
+        {
+            pattern = "jdbc:mysql://([1-9]|[1-9]\\\\d|1\\\\d{2}|2[0-4]\\\\d|25[0-5])(\\\\.(\\\\d|[1-9]\\\\d|1\\\\d{2}|2[0-4]\\\\d|25[0-5])){3}:\\\\d{4}/.*";
+        }
+        else
+        {
+            pattern = "([1-9]|[1-9]\\\\d|1\\\\d{2}|2[0-4]\\\\d|25[0-5])(\\\\.(\\\\d|[1-9]\\\\d|1\\\\d{2}|2[0-4]\\\\d|25[0-5])){3}:\\\\d{4}?key=.*secret.key&logdir=.*";
+
+        }
+        boolean isMatch = Pattern.matches(pattern, sqlconninfo);
+        if (isMatch)
+        {
+            insertResult = sqlService.insert(sqlmode,sqlconninfo,sqlusername,sqlpassword);
+        }
+        else{
+            logger.info("输入的数据库信息未满足校验条件");
+        }
         return insertResult;
     }
 

@@ -74,7 +74,11 @@
         .pagination_div{
             margin-bottom: 20px!important;
             text-align: center!important;
-
+        }
+        .pagination-item-active
+        {
+            background-color: #3187f6;
+            border-color: #3187f6;
         }
     </style>
 </head>
@@ -119,11 +123,10 @@
 <script>
     joinPage(document.getElementById('sqladdressid').value);
     function joinPage(info){
-        alert(document.getElementById('sqladdressid').value)
         $("#paginationinfo").empty();
         if (info)
         {
-            lbody += "<li class=\"pagination\"><a>1</a></li>";
+            lbody += "<li class=\"pagination pagination-item-active\"><a>1</a></li>";
             $("#paginationinfo").append(lbody);
         }
         else{
@@ -134,15 +137,18 @@
                 var sqlcount = $.parseJSON(resdata).count;
                 for(temp = 1; temp <= Math.ceil(sqlcount/10); temp++)
                 {
-                    lbody += "<li class=\"pagination\"><a onclick=\"javascript:selectSqlInfo("+(temp-1)*10+","+temp*10+");\" >"+temp+"</a></li>";
+                    lbody += "<li class=\"pagination\"><a  id='pagecoutid"+temp+"'onclick=\"javascript:selectSqlInfo("+(temp-1)*10+","+10+");\">"+temp+"</a></li>";
                 }
+
                 $("#paginationinfo").append(lbody)
             })
         }
     }
+
     selectSqlInfo(0,10,'');
     function selectSqlInfo(limitStart,limitEnd,info) {
         $("#sqlinfo").empty();
+        $("#pagecoutid"+Math.ceil((limitStart+1)/10)).toggleClass("pagination pagination-item-active");
         var tablestart = "<table border='1' align=\"center\">";
         var tableend = "</table>";
         var tbody = '<tr><th style="background:gray">id</th><th style="background:gray">数据库类型</th><th style="background:gray">连接信息</th><th style="background:gray">用户名</th><th style="background:gray">密码</th></tr>';
@@ -195,7 +201,7 @@
                 alert("新增成功");
             }
             else{
-                alert("新增失败");
+                alert("新增失败,连接信息必须按照标准信息进行输入");
             }
         });
 
