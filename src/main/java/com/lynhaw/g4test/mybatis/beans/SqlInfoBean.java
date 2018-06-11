@@ -19,6 +19,15 @@ public class SqlInfoBean implements Serializable {
         super();
     }
 
+    public SqlInfoBean(int id,String sqlmode,String sqlconninfo,String sqlusername,String sqlpassword)
+    {
+        this.id = id;
+        this.sqlmode = sqlmode;
+        this.sqlconninfo = sqlconninfo;
+        this.sqlusername = sqlusername;
+        this.sqlpassword = sqlpassword;
+    }
+
     public SqlInfoBean(String sqlmode,String sqlconninfo,String sqlusername,String sqlpassword)
     {
         this.sqlmode = sqlmode;

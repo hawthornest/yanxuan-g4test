@@ -17,6 +17,8 @@ import java.util.Map;
 @Component(value = "SqlInfoMapper")
 public interface  SqlInfoMapper {
     public List<SqlInfoBean> findsqlInfo(SqlInfoBean sqlInfoBean);
+    public int findsqlcount();
+    public List<SqlInfoBean> findsqlInfobyInfo(@Param("sqltestinfo")String sqltestinfo);
     public int addsqlInfo(SqlInfoBean sqlInfoBean);
     public List<SqlInfoBean> findlimitsqlInfo(@Param("limitStart")int limitStart, @Param("limitEnd")int limitEnd);
 

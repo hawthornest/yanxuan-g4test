@@ -25,6 +25,16 @@ public class SqlInfoServiceImpl implements SqlService{
     }
 
     @Override
+    public List<SqlInfoBean> findsqlInfobyInfo(String sqlconninfo) {
+        return sqlInfoMapper.findsqlInfobyInfo(sqlconninfo);
+    }
+
+    @Override
+    public int getSqlInfocount() {
+        return sqlInfoMapper.findsqlcount();
+    }
+
+    @Override
     public int insert(String sqlmode,String sqlconninfo,String sqlusername,String sqlpassword) {
         SqlInfoBean sqlInfoBean = new SqlInfoBean(sqlmode,sqlconninfo,sqlusername,sqlpassword);
         return sqlInfoMapper.addsqlInfo(sqlInfoBean);

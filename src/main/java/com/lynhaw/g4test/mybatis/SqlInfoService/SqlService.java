@@ -10,6 +10,8 @@ import java.util.List;
  */
 public interface  SqlService {
     public List<SqlInfoBean> getSqlInfoBeanInfo(int id);
+    public List<SqlInfoBean> findsqlInfobyInfo(String sqlconninfo);
+    public int getSqlInfocount();
     public int insert(String sqlmode,String sqlconninfo,String sqlusername,String sqlpassword);
     public List<SqlInfoBean> getLimitSqlInfoBeanInfo(int limitStart,int limitEnd);
 }
