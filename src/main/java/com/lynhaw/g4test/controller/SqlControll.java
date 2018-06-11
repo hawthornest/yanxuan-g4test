@@ -71,11 +71,11 @@ public class SqlControll {
         int insertResult = 0;
         if (sqlmode.equals("mysql"))
         {
-            pattern = "jdbc:mysql://([1-9]|[1-9]\\\\d|1\\\\d{2}|2[0-4]\\\\d|25[0-5])(\\\\.(\\\\d|[1-9]\\\\d|1\\\\d{2}|2[0-4]\\\\d|25[0-5])){3}:\\\\d{4}/.*";
+            pattern = "jdbc:mysql://.*:.*/.*";
         }
         else
         {
-            pattern = "([1-9]|[1-9]\\\\d|1\\\\d{2}|2[0-4]\\\\d|25[0-5])(\\\\.(\\\\d|[1-9]\\\\d|1\\\\d{2}|2[0-4]\\\\d|25[0-5])){3}:\\\\d{4}?key=.*secret.key&logdir=.*";
+            pattern = ".*?key=.*secret.key&logdir=.*";
 
         }
         boolean isMatch = Pattern.matches(pattern, sqlconninfo);
