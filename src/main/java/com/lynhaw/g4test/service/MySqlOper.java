@@ -34,10 +34,15 @@ public class MySqlOper {
         if (sqlIsSqlEmpty.equals(""))
         {
             logger.info("查询结果为:"+sqlInfoBeans.get(0).toString());
-            if (sqlInfoBeans.get(0).getSqlmode().equals("mysql"))
+            if (sqlInfoBeans.get(0).getSqlmode().equals("mysql") ||  sqlInfoBeans.get(0).getSqlmode().equals("ddb"))
             {
                 try {
-                    Class.forName("com.mysql.jdbc.Driver");
+                    if (sqlInfoBeans.get(0).getSqlmode().equals("mysql")) {
+                        Class.forName("com.mysql.jdbc.Driver");
+                    }
+                    else{
+                        Class.forName("com.netease.backend.db.DBDriver");
+                    }
                     try {
                         con = DriverManager.getConnection(sqlInfoBeans.get(0).getSqlconninfo(),sqlInfoBeans.get(0).getSqlusername(),sqlInfoBeans.get(0).getSqlpassword());
                         Statement statement = con.createStatement();
@@ -86,10 +91,17 @@ public class MySqlOper {
         if (sqlIsSqlEmpty.equals(""))
         {
             logger.info("查询结果为:"+sqlInfoBeans.get(0).toString());
-            if (sqlInfoBeans.get(0).getSqlmode().equals("mysql"))
+            if (sqlInfoBeans.get(0).getSqlmode().equals("mysql") || sqlInfoBeans.get(0).getSqlmode().equals("ddb"))
             {
                 try {
-                    Class.forName("com.mysql.jdbc.Driver");
+                    if (sqlInfoBeans.get(0).getSqlmode().equals("mysql")) {
+                        Class.forName("com.mysql.jdbc.Driver");
+                        logger.info("进入mysql数据库操作");
+                    }
+                    else{
+                        Class.forName("com.netease.backend.db.DBDriver");
+                        logger.info("进入ddb数据库操作");
+                    }
                     try {
                         con = DriverManager.getConnection(sqlInfoBeans.get(0).getSqlconninfo(),sqlInfoBeans.get(0).getSqlusername(),sqlInfoBeans.get(0).getSqlpassword());
                         Statement stmt=con.createStatement();
