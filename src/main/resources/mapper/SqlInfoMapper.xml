@@ -6,6 +6,14 @@
         select * from TB_YX_G4TEST_SQLINFO WHERE  id = #{id}
     </select>
 
+    <select id="findsqlInfobyInfo" resultType="com.lynhaw.g4test.mybatis.beans.SqlInfoBean" parameterType="string">
+        select * from TB_YX_G4TEST_SQLINFO WHERE  sqlconninfo LIKE '%${sqltestinfo}%'
+    </select>
+
+    <select id="findsqlcount" resultType="java.lang.Integer">
+        select count(1) from TB_YX_G4TEST_SQLINFO
+    </select>
+
     <select id="findlimitsqlInfo" resultType="com.lynhaw.g4test.mybatis.beans.SqlInfoBean">
         select * from TB_YX_G4TEST_SQLINFO limit #{limitStart},#{limitEnd}
     </select>
