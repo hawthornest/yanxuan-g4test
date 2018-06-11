@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数据库管理页面</title>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <style>
+        .white_content {
+            display: none;
+            position: absolute;
+            /*top: 25%;*/
+            left: 25%;
+            width: 40%;
+            padding: 60px 120px;
+            background-color: white;
+            z-index:1002;
+            overflow: auto;
+        }
+        .black_overlay {
+            display: none;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            z-index:1001;
+            -moz-opacity: 0.8;
+            opacity:.80;
+            filter: alpha(opacity=88);
+        }
+        .close {
+            float:right;
+            clear:both;
+            /*width:20%;*/
+            text-align:right;
+            margin:20px 20px 20px 10px;
+        }
+        .labelcontrol{
+            padding-right:10px;
+            float: left;
+            min-height: 1px;
+            width: 20%;
+            text-align: right;
+            margin:8px 0px 0px 0px;
+        }
+        .Inputcontrol{
+            padding-right:10px;
+            min-height: 1px;
+            width: 20%;
+            margin:10px 0px 0px 0px;
+        }
+        .pagination {
+            display: inline-block;
+            margin-right: 8px;
+            font-size: 12px;
+            cursor: pointer;
+            border-radius: 4px;
+            user-select: none;
+            min-width: 28px;
+            height: 28px;
+            line-height: 28px;
+            text-align: center;
+            list-style: none;
+            vertical-align: middle;
+            border: 1px solid #d9d9d9;
+            background-color: transparent;
+            outline: 0;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .pagination_div{
+            margin-bottom: 20px!important;
+            text-align: center!important;
+
+        }
+    </style>
+</head>
+<body>
+<h2>对接gotest数据库管理页面</h2>
+<hr>
+数据库地址:
+<input type="text" name="数据库地址" id="sqladdressid">
+<button type="button" id="selectButton" onchange="javascript:joinPage();" onclick="selectSqlInfo(0,10,document.getElementById('sqladdressid').value)">查询</button>
+<button type="button" id="addSqlButton" onclick="showaddSqlInfo('light')">新增</button>
+<div id="light" class="white_content">
+    <div class="close"><a href="javascript:void(0)" onclick="hide('light')"> 关闭</a></div>
+    <div>
+        <label class="labelcontrol">数据库类型:</label>
+        <select id="sqlmodeid" class="Inputcontrol">
+            <option value="mysql">mysql</option>
+            <option value="ddb">ddb</option>
+        </select>
+    </div>
+    <div>
+        <label class="labelcontrol">数据库连接信息:</label>
+        <input type="text"  class="Inputcontrol" id="sqlinfoid" name="数据库连接信息">
+    </div>
+    <div>
+        <label class="labelcontrol">用户名:</label>
+        <input type="text" class="Inputcontrol" id="sqlusernameid" name="数据库连接信息">
+    </div>
+    <div>
+        <label class="labelcontrol">密码:</label>
+        <input type="text"  class="Inputcontrol" id="sqlpasswordid" name="数据库连接信息">
+    </div>
+    <button type="button" id="sqladdid" onclick="addSqlInfo()" class="close"><a href="javascript:void(0)" onclick="hide('light')"> 提交</a></button>
+</div>
+<div id="fade" class="black_overlay"></div>
+<hr>
+<table id="sqlinfo" align="center" style="text-align: center"></table>
+<div class="pagination_div" >
+    <ul  id="paginationinfo" onchange="javascript:joinPage(document.getElementById('sqladdressid').value);">
+    </ul>
+</div>
+</body>
+<script>
+    joinPage(document.getElementById('sqladdressid').value);
+    function joinPage(info){
+        alert(document.getElementById('sqladdressid').value)
+        $("#paginationinfo").empty();
+        if (info)
+        {
+            lbody += "<li class=\"pagination\"><a>1</a></li>";
+            $("#paginationinfo").append(lbody);
+        }
+        else{
+            var genXmlUrl = "/getLimitSqlInfo?";
+            var requestParam = "limitStart=0&limitEnd=10";
+            var lbody='';
+            $.get(genXmlUrl+requestParam,function(resdata){
+                var sqlcount = $.parseJSON(resdata).count;
+                for(temp = 1; temp <= Math.ceil(sqlcount/10); temp++)
+                {
+                    lbody += "<li class=\"pagination\"><a onclick=\"javascript:selectSqlInfo("+(temp-1)*10+","+temp*10+");\" >"+temp+"</a></li>";
+                }
+                $("#paginationinfo").append(lbody)
+            })
+        }
+    }
+    selectSqlInfo(0,10,'');
+    function selectSqlInfo(limitStart,limitEnd,info) {
+        $("#sqlinfo").empty();
+        var tablestart = "<table border='1' align=\"center\">";
+        var tableend = "</table>";
+        var tbody = '<tr><th style="background:gray">id</th><th style="background:gray">数据库类型</th><th style="background:gray">连接信息</th><th style="background:gray">用户名</th><th style="background:gray">密码</th></tr>';
+        if (info)
+        {
+            var genXmlUrl = "/getSqlInfobyinfo?";
+            var requestParam = "sqlconninfo="+info;
+            $.get(genXmlUrl+requestParam,function(resdata)
+            {
+                var sqldata = $.parseJSON(resdata).data;
+                for(datalenght = 0; datalenght < sqldata.length; datalenght++) {
+                    tbody += "<tr><td>"+sqldata[datalenght].id+"</td><td>"+sqldata[datalenght].sqlmode+"</td><td>"+sqldata[datalenght].sqlconninfo+"</td><td>"+sqldata[datalenght].sqlusername+"</td><td>"+sqldata[datalenght].sqlpassword+"</td></tr>";
+                }
+                $("#sqlinfo").append(tablestart + tbody + tableend);
+            });
+        }
+        else
+        {
+            var genXmlUrl = "/getLimitSqlInfo?";
+            var requestParam = "limitStart="+limitStart+"&limitEnd="+limitEnd;
+            $.get(genXmlUrl+requestParam,function(resdata)
+            {
+//            alert(resdata)
+                var sqldata = $.parseJSON(resdata).data;
+//            alert(sqldata);
+                for(datalenght = 0; datalenght < sqldata.length; datalenght++) {
+                    tbody += "<tr><td>"+sqldata[datalenght].id+"</td><td>"+sqldata[datalenght].sqlmode+"</td><td>"+sqldata[datalenght].sqlconninfo+"</td><td>"+sqldata[datalenght].sqlusername+"</td><td>"+sqldata[datalenght].sqlpassword+"</td></tr>";
+                }
+                $("#sqlinfo").append(tablestart + tbody + tableend);
+            });
+        }
+
+    }
+
+    function addSqlInfo() {
+        var sqlmode = $('#sqlmodeid').val();
+        var sqlinfo = $('#sqlinfoid').val();
+        var sqlusername = $('#sqlusernameid').val();
+        var sqlpassword = $('#sqlpasswordid').val();
+        if (sqlmode=="" || sqlinfo=="" || sqlusername=="" || sqlpassword=="")
+        {
+            alert("每个参数都需要完成填写");
+            return;
+        }
+        var insertUrl = "/insertSql?";
+        var requestParam = "sqlmode="+sqlmode+"&sqlconninfo="+sqlinfo+"&sqlusername="+sqlusername+"&sqlpassword="+sqlpassword;
+        $.get(insertUrl+requestParam,function(data){
+            if (data==1)
+            {
+                alert("新增成功");
+            }
+            else{
+                alert("新增失败");
+            }
+        });
+
+    }
+    function hide(tag){
+        var light=document.getElementById(tag);
+        var fade=document.getElementById('fade');
+        light.style.display='none';
+        fade.style.display='none';
+    }
+    function showaddSqlInfo(tag){
+        var light=document.getElementById(tag);
+        var fade=document.getElementById('fade');
+        light.style.display='block';
+        fade.style.display='block';
+    }
+</script>
+
+</html>
