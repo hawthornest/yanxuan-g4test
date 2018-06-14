@@ -127,6 +127,7 @@
                 <directory>static</directory>
                 <includes>
                     <include>/*</include>
+                    <include>/*/*</include>
                 </includes>
                 <filtering>false</filtering>
             </resource>
