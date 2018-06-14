@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-type" content="text/html;charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="baidu-site-verification" content="eAB3J39RXT">
+    <title>严选后台系统规范</title>
+    <meta name="Keywords" content="网易严选">
+    <meta name="description" content="网易严选">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/jsmethod.js"></script>
+</head>
+
+<body>
+
+    <div class="m-head">
+        <div class="m-nav">
+            <div class="m-logo">
+                <img src="//nos.netease.com/mailpub-test/hxm/yanxuan-ark/yanxuan-ark-web/img/logo-357d1f045cbc.png" />
+            </div>
+            <ul class="m-menu">
+                <li>
+                    <a>
+                        严选基础服务数据库管理平台
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="m-main">
+        <div class="sidebar" style="height: 100%;top:80px;background:#2F3542;width: 200px;position: absolute;">
+            <ul class="nav">
+                <li class="navli"><a class="nava" id="index_1" href="#" style="color: #ffffff;font-weight: bold;font-size: 20px;margin-top: 20px;padding: 20px">数据库管理页面</a> </li>
+            </ul>
+        </div>
+        <div class="m-content" style="left: 478px;position: absolute;">
+            <div align="center" style="font-weight:bold;font-size:20px; color:#080808;padding: 20px 0;">
+                <label>
+                    数据库地址:
+                </label>
+                <input type="text" name="数据库地址" style="width: 400px;height: 25px;" id="sqladdressid">
+                <button type="button" style="font-weight:bold;font-size:20px; color:#080808"
+                        id="selectButton" onchange="javascript:joinPage();" onclick="selectSqlInfo(0,10,document.getElementById('sqladdressid').value)">
+                    查询
+                </button>
+                <button type="button" style="font-weight:bold;font-size:20px; color:#080808"
+                        id="addSqlButton" onclick="showaddSqlInfo('light','','')">
+                    新增
+                </button>
+            </div>
+            <div id="light" class="white_content">
+                <div class="close">
+                    <a href="javascript:void(0)" onclick="hide('light')">
+                        关闭
+                    </a>
+                </div>
+                <div>
+                    <label class="labelcontrol">
+                        数据库名:
+                    </label>
+                    <input type="text" class="Inputcontrol" id="sqlname" name="数据库名" style="width: 50%">
+                </div>
+                <div>
+                    <label class="labelcontrol">
+                        数据库类型:
+                    </label>
+                    <select id="sqlmodeid" class="Inputcontrol">
+                        <option value="mysql" style="font-size:10px">
+                            mysql
+                        </option>
+                        <option value="ddb">
+                            ddb
+                        </option>
+                    </select>
+                </div>
+                <div>
+                    <label class="labelcontrol">
+                        数据库连接信息:
+                    </label>
+                    <input type="text" class="Inputcontrol" id="sqlinfoid" name="数据库连接信息"
+                           style="width: 50%">
+                </div>
+                <div>
+                    <label class="labelcontrol">
+                        用户名:
+                    </label>
+                    <input type="text" class="Inputcontrol" id="sqlusernameid" name="数据库连接信息">
+                </div>
+                <div>
+                    <label class="labelcontrol">
+                        密码:
+                    </label>
+                    <input type="text" class="Inputcontrol" id="sqlpasswordid" name="数据库连接信息">
+                </div>
+                <button type="button" id="sqladdid" onclick="addSqlInfo()" class="close">
+                    <a href="javascript:void(0)" onclick="hide('light')">
+                        提交
+                    </a>
+                </button>
+            </div>
+            <div id="lighteidt" class="white_content">
+                <div class="close">
+                    <a href="javascript:void(0)" onclick="hide('lighteidt')">
+                        关闭
+                    </a>
+                </div>
+                <div>
+                    <label class="labelcontrol">
+                        数据库名:
+                    </label>
+                    <input type="text" class="Inputcontrol"
+                           id="sqlnameeidt" name="数据库名" style="width: 50%">
+                </div>
+                <div>
+                    <label class="labelcontrol">
+                        数据库类型:
+                    </label>
+                    <select id="sqlmodeeidtid" class="Inputcontrol">
+                        <option value="mysql" style="font-size:10px">
+                            mysql
+                        </option>
+                        <option value="ddb">
+                            ddb
+                        </option>
+                    </select>
+                </div>
+                <div>
+                    <label class="labelcontrol">
+                        数据库连接信息:
+                    </label>
+                    <input type="text" class="Inputcontrol" id="sqlinfoeidtid" name="数据库连接信息"
+                           style="width: 50%">
+                </div>
+                <div>
+                    <label class="labelcontrol">
+                        用户名:
+                    </label>
+                    <input type="text" class="Inputcontrol" id="sqlusernameeidtid" name="数据库连接信息">
+                </div>
+                <div>
+                    <label class="labelcontrol">
+                        密码:
+                    </label>
+                    <input type="text" class="Inputcontrol" id="sqlpasswordeidtid" name="数据库连接信息">
+                </div>
+                <!--<button type="button" id="sqladdeidtid"  class="close">-->
+                    <!--<a href="javascript:void(0)" onclick="hide('light')">-->
+                        <!--提交-->
+                    <!--</a>-->
+                <!--</button>-->
+            </div>
+            <div id="fade" class="black_overlay"></div>
+            <table id="sqlinfo" class="tablesql" align="center"></table>
+            <div class="pagination_div" >
+                <ul  id="paginationinfo" onchange="javascript:joinPage(document.getElementById('sqladdressid').value);">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--<div class="m-foot">-->
+        <!--<div class="m-content">-->
+            <!--<h4>友情链接</h4>-->
+            <!--<ul class="m-list">-->
+                <!--<li>-->
+                    <!--<a href="http://npm.mail.netease.com/">NPM</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="https://github.com/ntesmail">Github</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="https://doc.webpack-china.org/">webpack</a>-->
+                <!--</li>-->
+            <!--</ul>-->
+            <!--<p class="cprt">网易公司版权所有 © 1997-2018</p>-->
+        <!--</div>-->
+    <!--</div>-->
+</body>
+
+</html>
