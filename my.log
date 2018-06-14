@@ -1,650 +1,437 @@
-2018-06-11 09:49:33,109  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 09:59:10,829  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 10:55:19,238  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 11:01:32,152  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 11:02:03,871  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 11:02:49,636  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 11:03:04,601  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 11:03:25,031  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 11:03:28,192  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 11:04:05,226  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 11:04:21,295  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 11:04:26,289  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 11:07:32,614  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 11:07:35,008  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 11:08:03,570  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 11:08:04,789  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 11:08:21,869  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 11:08:23,306  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 11:11:38,293  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 11:11:38,348  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 11:11:40,448  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 11:30:00,002  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 11:30:00,601  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 13:59:45,949  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 13:59:47,755  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:00:56,382  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:01:32,256  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:01:39,119  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:04:20,563  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:04:21,863  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:04:23,872  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:05:59,596  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:06:04,798  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:08:21,305  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:08:35,344  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:08:59,802  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:10:17,595  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:10:19,747  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:10:44,116  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:10:45,751  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:10:49,585  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:11:04,346  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:11:14,281  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:12:42,491  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:12:50,477  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:13:05,372  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:14:19,757  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:16:07,195  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:16:21,687  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:16:21,694  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:16:54,480  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:16:54,491  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:22:23,132  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:22:23,141  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:26:25,477  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:26:26,888  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:26:29,008  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:26:34,867  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:26:55,489  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:26:55,494  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:27:00,569  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:27:01,930  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:27:05,794  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:27:07,627  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:27:09,321  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:27:11,491  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:28:22,722  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:28:22,794  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:28:25,951  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:28:40,529  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:28:48,992  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:28:52,876  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:28:56,603  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:28:58,929  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:30:35,301  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:30:35,306  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:31:01,229  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:31:07,343  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:31:09,849  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:31:12,703  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:31:15,333  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:31:17,228  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 14:46:09,501  INFO SqlControll:35 ---- 查询数据库总数为:70
-2018-06-11 15:03:42,057  INFO SqlControll:39 ---- 模糊查询结果为:{"code":200,"data":[{"id":10002,"sqlconninfo":"jdbc:mysql://10.246.71.28:4306/yanxuan_smartipc","sqlmode":"mysql","sqlpassword":"yanxuan_smartipc","sqlusername":"yanxuan_smartipc"},{"id":10008,"sqlconninfo":"jdbc:mysql://10.246.71.28:4306/yanxuan_smartipc","sqlmode":"mysql","sqlpassword":"yanxuan_smartipc","sqlusername":"yanxuan_smartipc"}],"count":1}
-2018-06-11 15:03:50,819  INFO SqlControll:47 ---- 查询数据库总数为:70
-2018-06-11 15:10:04,708  INFO SqlControll:47 ---- 查询数据库总数为:70
-2018-06-11 15:10:04,719  INFO SqlControll:47 ---- 查询数据库总数为:70
-2018-06-11 15:10:11,222  INFO SqlControll:39 ---- 模糊查询结果为:{"code":200,"data":[{"id":10002,"sqlconninfo":"jdbc:mysql://10.246.71.28:4306/yanxuan_smartipc","sqlmode":"mysql","sqlpassword":"yanxuan_smartipc","sqlusername":"yanxuan_smartipc"},{"id":10008,"sqlconninfo":"jdbc:mysql://10.246.71.28:4306/yanxuan_smartipc","sqlmode":"mysql","sqlpassword":"yanxuan_smartipc","sqlusername":"yanxuan_smartipc"}],"count":1}
-2018-06-11 15:11:24,581  INFO SqlControll:47 ---- 查询数据库总数为:70
-2018-06-11 15:14:03,744  INFO SqlControll:47 ---- 查询数据库总数为:70
-2018-06-11 15:14:11,672  INFO SqlControll:39 ---- 模糊查询结果为:{"code":200,"data":[{"id":10002,"sqlconninfo":"jdbc:mysql://10.246.71.28:4306/yanxuan_smartipc","sqlmode":"mysql","sqlpassword":"yanxuan_smartipc","sqlusername":"yanxuan_smartipc"},{"id":10008,"sqlconninfo":"jdbc:mysql://10.246.71.28:4306/yanxuan_smartipc","sqlmode":"mysql","sqlpassword":"yanxuan_smartipc","sqlusername":"yanxuan_smartipc"}],"count":1}
-2018-06-11 15:14:44,202  INFO SqlControll:47 ---- 查询数据库总数为:70
-2018-06-11 15:14:44,215  INFO SqlControll:47 ---- 查询数据库总数为:70
-2018-06-11 15:14:49,000  INFO SqlControll:39 ---- 模糊查询结果为:{"code":200,"data":[{"id":10002,"sqlconninfo":"jdbc:mysql://10.246.71.28:4306/yanxuan_smartipc","sqlmode":"mysql","sqlpassword":"yanxuan_smartipc","sqlusername":"yanxuan_smartipc"},{"id":10008,"sqlconninfo":"jdbc:mysql://10.246.71.28:4306/yanxuan_smartipc","sqlmode":"mysql","sqlpassword":"yanxuan_smartipc","sqlusername":"yanxuan_smartipc"}],"count":1}
-2018-06-11 15:15:20,332  INFO SqlControll:47 ---- 查询数据库总数为:70
-2018-06-11 15:15:20,344  INFO SqlControll:47 ---- 查询数据库总数为:70
-2018-06-11 15:15:24,781  INFO SqlControll:47 ---- 查询数据库总数为:70
-2018-06-11 15:15:24,797  INFO SqlControll:47 ---- 查询数据库总数为:70
-2018-06-11 15:15:30,516  INFO SqlControll:39 ---- 模糊查询结果为:{"code":200,"data":[{"id":10002,"sqlconninfo":"jdbc:mysql://10.246.71.28:4306/yanxuan_smartipc","sqlmode":"mysql","sqlpassword":"yanxuan_smartipc","sqlusername":"yanxuan_smartipc"},{"id":10008,"sqlconninfo":"jdbc:mysql://10.246.71.28:4306/yanxuan_smartipc","sqlmode":"mysql","sqlpassword":"yanxuan_smartipc","sqlusername":"yanxuan_smartipc"}],"count":1}
-2018-06-11 15:15:55,961  INFO SqlControll:39 ---- 模糊查询结果为:{"code":200,"data":[{"id":10002,"sqlconninfo":"jdbc:mysql://10.246.71.28:4306/yanxuan_smartipc","sqlmode":"mysql","sqlpassword":"yanxuan_smartipc","sqlusername":"yanxuan_smartipc"},{"id":10008,"sqlconninfo":"jdbc:mysql://10.246.71.28:4306/yanxuan_smartipc","sqlmode":"mysql","sqlpassword":"yanxuan_smartipc","sqlusername":"yanxuan_smartipc"}],"count":1}
-2018-06-11 15:16:07,565  INFO SqlControll:39 ---- 模糊查询结果为:{"code":200,"data":[{"id":10002,"sqlconninfo":"jdbc:mysql://10.246.71.28:4306/yanxuan_smartipc","sqlmode":"mysql","sqlpassword":"yanxuan_smartipc","sqlusername":"yanxuan_smartipc"},{"id":10008,"sqlconninfo":"jdbc:mysql://10.246.71.28:4306/yanxuan_smartipc","sqlmode":"mysql","sqlpassword":"yanxuan_smartipc","sqlusername":"yanxuan_smartipc"}],"count":1}
-2018-06-11 15:16:10,257  INFO SqlControll:47 ---- 查询数据库总数为:70
-2018-06-11 15:16:10,267  INFO SqlControll:47 ---- 查询数据库总数为:70
-2018-06-11 15:16:14,015  INFO SqlControll:39 ---- 模糊查询结果为:{"code":200,"data":[{"id":1000,"sqlconninfo":"test","sqlmode":"mysql","sqlpassword":"test","sqlusername":"test"},{"id":10001,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10009,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10010,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10011,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10012,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10013,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10014,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10015,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10016,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10017,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10018,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10019,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10020,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10021,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10022,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10023,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10024,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10025,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10026,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10027,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10028,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10029,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10030,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10031,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10032,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10033,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10034,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10035,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10036,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10037,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10038,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10039,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10040,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10041,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10042,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10043,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10044,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10045,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10046,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10047,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10048,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10049,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10050,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10051,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10052,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10053,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10054,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10055,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10056,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10057,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10058,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10059,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10060,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10061,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10062,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10063,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10064,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10065,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10066,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10067,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10068,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10069,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10070,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10071,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10072,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10073,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10074,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"}],"count":1}
-2018-06-11 15:17:08,654  INFO SqlControll:39 ---- 模糊查询结果为:{"code":200,"data":[{"id":1000,"sqlconninfo":"test","sqlmode":"mysql","sqlpassword":"test","sqlusername":"test"},{"id":10001,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10009,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10010,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10011,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10012,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10013,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10014,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10015,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10016,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10017,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10018,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10019,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10020,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10021,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10022,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10023,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10024,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10025,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10026,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10027,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10028,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10029,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10030,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10031,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10032,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10033,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10034,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10035,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10036,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10037,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10038,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10039,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10040,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10041,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10042,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10043,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10044,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10045,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10046,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10047,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10048,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10049,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10050,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10051,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10052,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10053,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10054,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10055,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10056,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10057,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10058,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10059,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10060,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10061,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10062,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10063,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10064,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10065,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10066,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10067,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10068,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10069,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10070,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10071,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10072,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10073,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"},{"id":10074,"sqlconninfo":"test","sqlmode":"test","sqlpassword":"test","sqlusername":"test"}],"count":1}
-2018-06-11 15:17:32,054  INFO SqlControll:47 ---- 查询数据库总数为:70
-2018-06-11 15:18:24,538  INFO SqlControll:47 ---- 查询数据库总数为:70
-2018-06-11 15:18:24,557  INFO SqlControll:47 ---- 查询数据库总数为:70
-2018-06-11 15:18:25,649  INFO SqlControll:47 ---- 查询数据库总数为:70
-2018-06-11 15:18:31,035  INFO SqlControll:39 ---- 模糊查询结果为:{"code":200,"data":[{"id":10002,"sqlconninfo":"jdbc:mysql://10.246.71.28:4306/yanxuan_smartipc","sqlmode":"mysql","sqlpassword":"yanxuan_smartipc","sqlusername":"yanxuan_smartipc"},{"id":10008,"sqlconninfo":"jdbc:mysql://10.246.71.28:4306/yanxuan_smartipc","sqlmode":"mysql","sqlpassword":"yanxuan_smartipc","sqlusername":"yanxuan_smartipc"}],"count":1}
-2018-06-11 15:18:46,667  INFO SqlControll:39 ---- 模糊查询结果为:{"code":200,"data":[{"id":10002,"sqlconninfo":"jdbc:mysql://10.246.71.28:4306/yanxuan_smartipc","sqlmode":"mysql","sqlpassword":"yanxuan_smartipc","sqlusername":"yanxuan_smartipc"},{"id":10008,"sqlconninfo":"jdbc:mysql://10.246.71.28:4306/yanxuan_smartipc","sqlmode":"mysql","sqlpassword":"yanxuan_smartipc","sqlusername":"yanxuan_smartipc"}],"count":1}
-2018-06-11 15:18:49,388  INFO SqlControll:47 ---- 查询数据库总数为:70
-2018-06-11 15:18:49,400  INFO SqlControll:47 ---- 查询数据库总数为:70
-2018-06-11 15:18:55,862  INFO SqlControll:39 ---- 模糊查询结果为:{"code":200,"data":[{"id":10002,"sqlconninfo":"jdbc:mysql://10.246.71.28:4306/yanxuan_smartipc","sqlmode":"mysql","sqlpassword":"yanxuan_smartipc","sqlusername":"yanxuan_smartipc"},{"id":10008,"sqlconninfo":"jdbc:mysql://10.246.71.28:4306/yanxuan_smartipc","sqlmode":"mysql","sqlpassword":"yanxuan_smartipc","sqlusername":"yanxuan_smartipc"}],"count":1}
-2018-06-11 15:20:17,412  INFO SqlControll:47 ---- 查询数据库总数为:70
-2018-06-11 15:20:17,419  INFO SqlControll:47 ---- 查询数据库总数为:70
-2018-06-11 15:20:49,813  INFO SqlControll:47 ---- 查询数据库总数为:70
-2018-06-11 15:20:51,104  INFO SqlControll:47 ---- 查询数据库总数为:70
-2018-06-11 15:20:52,752  INFO SqlControll:47 ---- 查询数据库总数为:70
-2018-06-11 15:21:08,218  INFO SqlControll:47 ---- 查询数据库总数为:70
-2018-06-11 15:21:39,685  INFO SqlControll:47 ---- 查询数据库总数为:70
-2018-06-11 15:21:39,693  INFO SqlControll:47 ---- 查询数据库总数为:70
-2018-06-11 15:21:42,891  INFO SqlControll:47 ---- 查询数据库总数为:70
-2018-06-11 15:21:46,123  INFO SqlControll:47 ---- 查询数据库总数为:70
-2018-06-11 15:21:50,755  INFO SqlControll:39 ---- 模糊查询结果为:{"code":200,"data":[{"id":10002,"sqlconninfo":"jdbc:mysql://10.246.71.28:4306/yanxuan_smartipc","sqlmode":"mysql","sqlpassword":"yanxuan_smartipc","sqlusername":"yanxuan_smartipc"},{"id":10008,"sqlconninfo":"jdbc:mysql://10.246.71.28:4306/yanxuan_smartipc","sqlmode":"mysql","sqlpassword":"yanxuan_smartipc","sqlusername":"yanxuan_smartipc"}],"count":1}
-2018-06-11 15:24:25,233  INFO SqlControll:47 ---- 查询数据库总数为:70
-2018-06-11 15:24:25,241  INFO SqlControll:47 ---- 查询数据库总数为:70
-2018-06-11 15:24:26,618  INFO SqlControll:47 ---- 查询数据库总数为:70
-2018-06-11 15:24:30,824  INFO SqlControll:39 ---- 模糊查询结果为:{"code":200,"data":[{"id":10002,"sqlconninfo":"jdbc:mysql://10.246.71.28:4306/yanxuan_smartipc","sqlmode":"mysql","sqlpassword":"yanxuan_smartipc","sqlusername":"yanxuan_smartipc"},{"id":10008,"sqlconninfo":"jdbc:mysql://10.246.71.28:4306/yanxuan_smartipc","sqlmode":"mysql","sqlpassword":"yanxuan_smartipc","sqlusername":"yanxuan_smartipc"}],"count":1}
-2018-06-11 15:24:35,686  INFO SqlControll:47 ---- 查询数据库总数为:70
-2018-06-11 15:24:35,694  INFO SqlControll:47 ---- 查询数据库总数为:70
-2018-06-11 15:39:12,898  INFO GetSqlInfo:79 ---- 输入参数为id=1000000,更新sql=test
-2018-06-11 15:39:30,068  INFO GetSqlInfo:79 ---- 输入参数为id=1000,更新sql=test
-2018-06-11 15:39:30,075  INFO GetSqlInfo:81 ---- 查询结果为:SqlInfoBean = [id = 1000,sqlmode = mysql,sqlconninfo = test,sqlusername = test,sqlpassword = test]
-2018-06-11 15:39:30,079 ERROR PublicMethod:24 ---- java.sql.SQLException: No suitable driver found for test
-	at java.sql.DriverManager.getConnection(DriverManager.java:689)
-	at java.sql.DriverManager.getConnection(DriverManager.java:247)
-	at com.lynhaw.g4test.controller.GetSqlInfo.updateSqlIfo(GetSqlInfo.java:88)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:745)
-
-2018-06-11 15:42:36,966  INFO GetSqlInfo:79 ---- 输入参数为id=1000000,更新sql=test
-2018-06-11 15:42:37,152  INFO GetSqlInfo:84 ---- 传入数据库id错误,在数据库表中,未维护:
-2018-06-11 15:47:05,105  INFO GetSqlInfo:35 ---- 输入参数为id=10002,查询sql=select * FROM TB_YX_SMARTIPC_AREA_CITY limit 2;
-2018-06-11 15:47:05,112  INFO GetSqlInfo:37 ---- 查询结果为:SqlInfoBean = [id = 10002,sqlmode = mysql,sqlconninfo = jdbc:mysql://10.246.71.28:4306/yanxuan_smartipc,sqlusername = yanxuan_smartipc,sqlpassword = yanxuan_smartipc]
-2018-06-11 15:47:05,176  INFO GetSqlInfo:57 ---- 获取到的列名为:Id,对应的值为:1
-2018-06-11 15:47:05,177  INFO GetSqlInfo:57 ---- 获取到的列名为:CityId,对应的值为:666
-2018-06-11 15:47:05,177  INFO GetSqlInfo:57 ---- 获取到的列名为:ProvinceId,对应的值为:666
-2018-06-11 15:47:05,177  INFO GetSqlInfo:57 ---- 获取到的列名为:CityName,对应的值为:娴峰
-2018-06-11 15:47:05,178  INFO GetSqlInfo:57 ---- 获取到的列名为:CreateTime,对应的值为:1477359485175
-2018-06-11 15:47:05,178  INFO GetSqlInfo:57 ---- 获取到的列名为:UpdateTime,对应的值为:1477359485175
-2018-06-11 15:47:05,178  INFO GetSqlInfo:57 ---- 获取到的列名为:Id,对应的值为:4001
-2018-06-11 15:47:05,178  INFO GetSqlInfo:57 ---- 获取到的列名为:CityId,对应的值为:110100
-2018-06-11 15:47:05,179  INFO GetSqlInfo:57 ---- 获取到的列名为:ProvinceId,对应的值为:110000
-2018-06-11 15:47:05,179  INFO GetSqlInfo:57 ---- 获取到的列名为:CityName,对应的值为:北京市
-2018-06-11 15:47:05,179  INFO GetSqlInfo:57 ---- 获取到的列名为:CreateTime,对应的值为:1479202715720
-2018-06-11 15:47:05,179  INFO GetSqlInfo:57 ---- 获取到的列名为:UpdateTime,对应的值为:1526474950043
-2018-06-11 15:47:05,181  INFO GetSqlInfo:61 ---- 返回值为:[{"ProvinceId":666,"CityId":666,"CreateTime":1477359485175,"UpdateTime":1477359485175,"Id":1,"CityName":"娴峰"},{"ProvinceId":110000,"CityId":110100,"CreateTime":1479202715720,"UpdateTime":1526474950043,"Id":4001,"CityName":"北京市"}]
-2018-06-11 15:58:34,413  INFO MySqlOper:31 ---- 输入参数为id=10002,查询sql=select * FROM TB_YX_SMARTIPC_AREA_CITY limit 2;
-2018-06-11 15:58:34,590  INFO MySqlOper:36 ---- 查询结果为:SqlInfoBean = [id = 10002,sqlmode = mysql,sqlconninfo = jdbc:mysql://10.246.71.28:4306/yanxuan_smartipc,sqlusername = yanxuan_smartipc,sqlpassword = yanxuan_smartipc]
-2018-06-11 15:58:34,604  INFO MySqlOper:55 ---- 获取到的列名为:Id,对应的值为:1
-2018-06-11 15:58:34,605  INFO MySqlOper:55 ---- 获取到的列名为:CityId,对应的值为:666
-2018-06-11 15:58:34,605  INFO MySqlOper:55 ---- 获取到的列名为:ProvinceId,对应的值为:666
-2018-06-11 15:58:34,605  INFO MySqlOper:55 ---- 获取到的列名为:CityName,对应的值为:娴峰
-2018-06-11 15:58:34,605  INFO MySqlOper:55 ---- 获取到的列名为:CreateTime,对应的值为:1477359485175
-2018-06-11 15:58:34,606  INFO MySqlOper:55 ---- 获取到的列名为:UpdateTime,对应的值为:1477359485175
-2018-06-11 15:58:34,606  INFO MySqlOper:55 ---- 获取到的列名为:Id,对应的值为:4001
-2018-06-11 15:58:34,606  INFO MySqlOper:55 ---- 获取到的列名为:CityId,对应的值为:110100
-2018-06-11 15:58:34,607  INFO MySqlOper:55 ---- 获取到的列名为:ProvinceId,对应的值为:110000
-2018-06-11 15:58:34,607  INFO MySqlOper:55 ---- 获取到的列名为:CityName,对应的值为:北京市
-2018-06-11 15:58:34,607  INFO MySqlOper:55 ---- 获取到的列名为:CreateTime,对应的值为:1479202715720
-2018-06-11 15:58:34,607  INFO MySqlOper:55 ---- 获取到的列名为:UpdateTime,对应的值为:1526474950043
-2018-06-11 15:58:34,631  INFO MySqlOper:59 ---- 返回值为:[{"ProvinceId":666,"CityId":666,"CreateTime":1477359485175,"UpdateTime":1477359485175,"Id":1,"CityName":"娴峰"},{"ProvinceId":110000,"CityId":110100,"CreateTime":1479202715720,"UpdateTime":1526474950043,"Id":4001,"CityName":"北京市"}]
-2018-06-11 15:58:39,369  INFO MySqlOper:31 ---- 输入参数为id=1002000,查询sql=select * FROM TB_YX_SMARTIPC_AREA_CITY limit 2;
-2018-06-11 15:58:39,374  INFO PublicMethod:34 ---- 传入数据库id错误,在数据库表中,未维护:
-2018-06-11 15:58:51,749  INFO MySqlOper:82 ---- 输入参数为id=1002000,更新sql=select * FROM TB_YX_SMARTIPC_AREA_CITY limit 2;
-2018-06-11 15:58:51,753  INFO PublicMethod:34 ---- 传入数据库id错误,在数据库表中,未维护:
-2018-06-11 15:59:10,353  INFO MySqlOper:82 ---- 输入参数为id=1002000,更新sql=null
-2018-06-11 15:59:10,357  INFO PublicMethod:34 ---- 传入数据库id错误,在数据库表中,未维护:
-2018-06-11 15:59:17,776  INFO MySqlOper:82 ---- 输入参数为id=1000,更新sql=null
-2018-06-11 15:59:17,780  INFO MySqlOper:88 ---- 查询结果为:SqlInfoBean = [id = 1000,sqlmode = mysql,sqlconninfo = test,sqlusername = test,sqlpassword = test]
-2018-06-11 15:59:17,781 ERROR PublicMethod:27 ---- java.sql.SQLException: No suitable driver found for test
-	at java.sql.DriverManager.getConnection(DriverManager.java:689)
-	at java.sql.DriverManager.getConnection(DriverManager.java:247)
-	at com.lynhaw.g4test.service.MySqlOper.writeSqlIfo(MySqlOper.java:94)
-	at com.lynhaw.g4test.controller.GetSqlInfo.updateSqlIfo(GetSqlInfo.java:40)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:745)
-
-2018-06-11 15:59:27,855  INFO MySqlOper:82 ---- 输入参数为id=10002,更新sql=null
-2018-06-11 15:59:27,859  INFO MySqlOper:88 ---- 查询结果为:SqlInfoBean = [id = 10002,sqlmode = mysql,sqlconninfo = jdbc:mysql://10.246.71.28:4306/yanxuan_smartipc,sqlusername = yanxuan_smartipc,sqlpassword = yanxuan_smartipc]
-2018-06-11 15:59:27,871 ERROR PublicMethod:27 ---- java.sql.SQLException: Can not issue NULL query.
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1086)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:989)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:975)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:920)
-	at com.mysql.jdbc.StatementImpl.checkNullOrEmptyQuery(StatementImpl.java:520)
-	at com.mysql.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1782)
-	at com.mysql.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1764)
-	at com.lynhaw.g4test.service.MySqlOper.writeSqlIfo(MySqlOper.java:96)
-	at com.lynhaw.g4test.controller.GetSqlInfo.updateSqlIfo(GetSqlInfo.java:40)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:745)
-
-2018-06-11 16:12:30,972  INFO MySqlOper:82 ---- 输入参数为id=10002,更新sql=UPDATE TB_YX_SMARTIPC_AREA_CITY SET CityId=667 where Id=1;
-2018-06-11 16:12:31,142  INFO MySqlOper:88 ---- 查询结果为:SqlInfoBean = [id = 10002,sqlmode = mysql,sqlconninfo = jdbc:mysql://10.246.71.28:4306/yanxuan_smartipc,sqlusername = yanxuan_smartipc,sqlpassword = yanxuan_smartipc]
-2018-06-11 16:12:46,733  INFO MySqlOper:82 ---- 输入参数为id=10002,更新sql=UPDATE TB_YX_SMARTIPC_AREA_CITY SET CityId=666 where Id=1;
-2018-06-11 16:12:46,737  INFO MySqlOper:88 ---- 查询结果为:SqlInfoBean = [id = 10002,sqlmode = mysql,sqlconninfo = jdbc:mysql://10.246.71.28:4306/yanxuan_smartipc,sqlusername = yanxuan_smartipc,sqlpassword = yanxuan_smartipc]
-2018-06-11 16:13:56,975  INFO MySqlOper:82 ---- 输入参数为id=10002,更新sql=INSERT(667,667,'海外',1528730999000,1528730999000);
-2018-06-11 16:13:56,979  INFO MySqlOper:88 ---- 查询结果为:SqlInfoBean = [id = 10002,sqlmode = mysql,sqlconninfo = jdbc:mysql://10.246.71.28:4306/yanxuan_smartipc,sqlusername = yanxuan_smartipc,sqlpassword = yanxuan_smartipc]
-2018-06-11 16:13:57,007 ERROR PublicMethod:27 ---- com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(667,667,'海外',1528730999000,1528730999000)' at line 1
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
-	at com.mysql.jdbc.Util.getInstance(Util.java:386)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1054)
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4237)
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4169)
-	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2617)
-	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2778)
-	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2819)
-	at com.mysql.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1842)
-	at com.mysql.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1764)
-	at com.lynhaw.g4test.service.MySqlOper.writeSqlIfo(MySqlOper.java:96)
-	at com.lynhaw.g4test.controller.GetSqlInfo.updateSqlIfo(GetSqlInfo.java:49)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:745)
-
-2018-06-11 16:16:16,989  INFO MySqlOper:82 ---- 输入参数为id=10002,更新sql=INSERT into TB_YX_SMARTIPC_AREA_CITY  values(667,667,'海外',1528730999000,1528730999000);
-2018-06-11 16:16:16,993  INFO MySqlOper:88 ---- 查询结果为:SqlInfoBean = [id = 10002,sqlmode = mysql,sqlconninfo = jdbc:mysql://10.246.71.28:4306/yanxuan_smartipc,sqlusername = yanxuan_smartipc,sqlpassword = yanxuan_smartipc]
-2018-06-11 16:16:17,003 ERROR PublicMethod:27 ---- java.sql.SQLException: Column count doesn't match value count at row 1
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1086)
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4237)
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4169)
-	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2617)
-	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2778)
-	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2819)
-	at com.mysql.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1842)
-	at com.mysql.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1764)
-	at com.lynhaw.g4test.service.MySqlOper.writeSqlIfo(MySqlOper.java:96)
-	at com.lynhaw.g4test.controller.GetSqlInfo.updateSqlIfo(GetSqlInfo.java:49)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:745)
-
-2018-06-11 16:17:26,889  INFO MySqlOper:82 ---- 输入参数为id=10002,更新sql=INSERT INTO TB_YX_SMARTIPC_AREA_CITY VALUES (4397,667,667,"海外",1528730999000,1528730999000);
-2018-06-11 16:17:26,894  INFO MySqlOper:88 ---- 查询结果为:SqlInfoBean = [id = 10002,sqlmode = mysql,sqlconninfo = jdbc:mysql://10.246.71.28:4306/yanxuan_smartipc,sqlusername = yanxuan_smartipc,sqlpassword = yanxuan_smartipc]
-2018-06-11 16:17:26,915 ERROR PublicMethod:27 ---- com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '667' for key 'udx_cid'
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
-	at com.mysql.jdbc.Util.getInstance(Util.java:386)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1041)
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4237)
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4169)
-	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2617)
-	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2778)
-	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2819)
-	at com.mysql.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1842)
-	at com.mysql.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1764)
-	at com.lynhaw.g4test.service.MySqlOper.writeSqlIfo(MySqlOper.java:96)
-	at com.lynhaw.g4test.controller.GetSqlInfo.updateSqlIfo(GetSqlInfo.java:49)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:745)
-
-2018-06-11 16:17:52,878  INFO MySqlOper:82 ---- 输入参数为id=10002,更新sql=INSERT INTO TB_YX_SMARTIPC_AREA_CITY VALUES (4397,668,668,"海外",1528730999000,1528730999000);
-2018-06-11 16:17:52,883  INFO MySqlOper:88 ---- 查询结果为:SqlInfoBean = [id = 10002,sqlmode = mysql,sqlconninfo = jdbc:mysql://10.246.71.28:4306/yanxuan_smartipc,sqlusername = yanxuan_smartipc,sqlpassword = yanxuan_smartipc]
-2018-06-11 16:18:02,024  INFO MySqlOper:82 ---- 输入参数为id=10002,更新sql=INSERT INTO TB_YX_SMARTIPC_AREA_CITY VALUES (668,668,"海外",1528730999000,1528730999000);
-2018-06-11 16:18:02,029  INFO MySqlOper:88 ---- 查询结果为:SqlInfoBean = [id = 10002,sqlmode = mysql,sqlconninfo = jdbc:mysql://10.246.71.28:4306/yanxuan_smartipc,sqlusername = yanxuan_smartipc,sqlpassword = yanxuan_smartipc]
-2018-06-11 16:18:02,039 ERROR PublicMethod:27 ---- java.sql.SQLException: Column count doesn't match value count at row 1
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1086)
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4237)
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4169)
-	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2617)
-	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2778)
-	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2819)
-	at com.mysql.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1842)
-	at com.mysql.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1764)
-	at com.lynhaw.g4test.service.MySqlOper.writeSqlIfo(MySqlOper.java:96)
-	at com.lynhaw.g4test.controller.GetSqlInfo.updateSqlIfo(GetSqlInfo.java:49)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:745)
-
+2018-06-14 10:14:56,893  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:14:56,980  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:17:39,266  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:17:39,276  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:18:23,136  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:18:23,147  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:18:31,715  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:18:31,721  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:18:48,584  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:18:48,654  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:19:15,222  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:19:15,229  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:20:00,961  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:20:00,967  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:24:30,628  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:24:30,651  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:25:37,487  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:25:37,551  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:26:47,517  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:26:47,573  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:27:04,039  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:27:04,084  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:29:23,291  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:29:23,331  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:31:15,951  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:31:15,956  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:31:16,740  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:31:16,757  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:31:53,570  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:31:53,575  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:31:54,168  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:31:54,195  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:31:54,608  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:31:54,621  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:32:54,390  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:32:54,418  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:32:55,293  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:32:55,307  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:33:18,229  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:33:18,254  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:33:19,177  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:33:19,228  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:34:02,888  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:34:02,905  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:34:03,451  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:34:03,495  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:34:46,405  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:34:46,422  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:34:47,126  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:34:47,144  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:35:01,214  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:35:01,237  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:35:29,125  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:35:29,166  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:35:47,733  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:35:47,761  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:35:48,345  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:35:48,352  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:36:03,416  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:36:03,435  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:36:03,857  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:36:03,861  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:36:17,245  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:36:17,274  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:36:17,606  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:36:17,629  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:36:32,937  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:36:32,953  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:36:33,292  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:36:33,321  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:36:47,205  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:36:47,235  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:36:47,534  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:36:47,551  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:37:30,161  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:37:30,165  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:37:30,488  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:37:30,493  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:37:51,561  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:37:51,581  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:37:51,959  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:37:51,995  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:38:46,453  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:38:46,481  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:38:46,816  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:38:46,826  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:43:59,037  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:43:59,142  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:46:51,013  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 10:46:51,028  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 11:14:56,763  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 11:14:56,801  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 11:14:57,218  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 11:14:57,247  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 11:14:57,511  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 11:14:57,528  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 11:14:57,820  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 11:14:57,853  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 11:14:58,035  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 11:14:58,061  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 11:14:58,271  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 11:14:58,302  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 11:14:58,497  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 11:14:58,539  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 11:15:43,583  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 11:15:43,627  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 11:16:51,783  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 11:16:51,817  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 11:16:52,152  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 11:16:52,188  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 11:21:29,007  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 11:21:29,029  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 11:21:29,614  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 11:21:29,647  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 11:21:29,978  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 11:21:30,014  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 11:21:30,295  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 11:21:30,336  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 11:22:35,665  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 11:22:35,677  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 11:22:36,100  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 11:22:36,126  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 11:27:52,539  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 11:27:52,585  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 11:28:08,837  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 11:28:08,859  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 11:28:09,370  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 11:28:09,385  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:48:11,203  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:48:11,281  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:48:29,186  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:48:29,223  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:49:45,125  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:49:45,138  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:49:45,667  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:49:45,686  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:49:46,044  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:49:46,071  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:49:46,384  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:49:46,443  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:49:46,640  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:49:46,683  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:49:46,920  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:49:46,941  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:50:21,770  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:50:21,793  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:50:22,199  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:50:22,209  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:50:22,568  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:50:22,585  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:50:22,932  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:50:22,954  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:50:23,259  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:50:23,269  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:50:23,587  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:50:23,601  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:50:23,960  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:50:23,971  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:50:24,341  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:50:24,352  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:51:46,554  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:51:46,565  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:51:47,596  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:51:47,620  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:51:47,889  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:51:47,901  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:51:48,127  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:51:48,144  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:52:58,344  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:52:58,361  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:52:58,865  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:52:58,883  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:53:35,494  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:53:35,549  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:53:35,915  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:53:35,947  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:53:36,244  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:53:36,287  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:54:05,977  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:54:06,007  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:54:06,441  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:54:06,459  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:54:06,879  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:54:06,913  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:54:07,063  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:54:07,108  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:54:07,367  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:54:07,382  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:55:08,817  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:55:08,828  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:55:09,268  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:55:09,283  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:55:09,578  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:55:09,612  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:55:12,285  INFO SqlControll:116 ---- 需要修改的数据库id为:10002
+2018-06-14 12:55:12,720  INFO SqlControll:121 ---- 修改数据库表记录的结果为成功
+2018-06-14 12:55:19,822  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 12:55:19,838  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:00:11,710  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:00:11,739  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:00:12,259  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:00:12,450  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:00:12,696  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:00:12,726  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:00:21,255  INFO SqlControll:116 ---- 需要修改的数据库id为:10002
+2018-06-14 13:00:21,258  INFO SqlControll:121 ---- 修改数据库表记录的结果为成功
+2018-06-14 13:00:24,848  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:00:24,905  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:01:02,590  INFO SqlControll:116 ---- 需要修改的数据库id为:10002
+2018-06-14 13:01:02,601  INFO SqlControll:121 ---- 修改数据库表记录的结果为成功
+2018-06-14 13:04:11,150  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:04:11,185  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:04:11,875  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:04:11,896  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:04:21,311  INFO SqlControll:116 ---- 需要修改的数据库id为:10002
+2018-06-14 13:04:21,455  INFO SqlControll:121 ---- 修改数据库表记录的结果为成功
+2018-06-14 13:04:41,913  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:04:42,825  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:05:34,618  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:05:34,636  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:05:35,183  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:05:35,203  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:05:35,522  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:05:35,548  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:05:35,878  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:05:35,897  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:05:36,175  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:05:36,189  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:06:52,881  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:06:52,905  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:06:54,249  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:06:54,295  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:06:54,871  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:06:54,890  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:07:20,824  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:07:20,849  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:07:28,964  INFO SqlControll:116 ---- 需要修改的数据库id为:10002
+2018-06-14 13:07:28,988  INFO SqlControll:121 ---- 修改数据库表记录的结果为成功
+2018-06-14 13:07:33,655  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:08:36,613  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:08:36,648  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:08:37,231  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:08:37,252  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:09:49,207  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:09:49,242  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:09:49,823  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:09:49,847  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:09:50,143  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:09:50,177  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:10:40,535  INFO SqlControll:116 ---- 需要修改的数据库id为:10002
+2018-06-14 13:10:40,548  INFO SqlControll:121 ---- 修改数据库表记录的结果为成功
+2018-06-14 13:10:43,519  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:10:52,991  INFO SqlControll:96 ---- 需要删除的数据库id为:10070
+2018-06-14 13:10:53,028  INFO SqlControll:101 ---- 删除数据库表记录的结果为成功
+2018-06-14 13:10:56,795  INFO SqlControll:55 ---- 查询数据库总数为:14
+2018-06-14 13:11:02,650  INFO SqlControll:55 ---- 查询数据库总数为:14
+2018-06-14 13:11:03,983  INFO SqlControll:55 ---- 查询数据库总数为:14
+2018-06-14 13:13:30,029  INFO SqlControll:55 ---- 查询数据库总数为:14
+2018-06-14 13:13:30,058  INFO SqlControll:55 ---- 查询数据库总数为:14
+2018-06-14 13:13:30,560  INFO SqlControll:55 ---- 查询数据库总数为:14
+2018-06-14 13:13:30,590  INFO SqlControll:55 ---- 查询数据库总数为:14
+2018-06-14 13:13:30,898  INFO SqlControll:55 ---- 查询数据库总数为:14
+2018-06-14 13:13:30,907  INFO SqlControll:55 ---- 查询数据库总数为:14
+2018-06-14 13:13:31,210  INFO SqlControll:55 ---- 查询数据库总数为:14
+2018-06-14 13:13:31,236  INFO SqlControll:55 ---- 查询数据库总数为:14
+2018-06-14 13:13:47,575  INFO SqlControll:55 ---- 查询数据库总数为:14
+2018-06-14 13:13:47,582  INFO SqlControll:55 ---- 查询数据库总数为:14
+2018-06-14 13:13:48,035  INFO SqlControll:55 ---- 查询数据库总数为:14
+2018-06-14 13:13:48,066  INFO SqlControll:55 ---- 查询数据库总数为:14
+2018-06-14 13:13:48,313  INFO SqlControll:55 ---- 查询数据库总数为:14
+2018-06-14 13:13:48,340  INFO SqlControll:55 ---- 查询数据库总数为:14
+2018-06-14 13:13:49,656  INFO SqlControll:55 ---- 查询数据库总数为:14
+2018-06-14 13:13:49,677  INFO SqlControll:55 ---- 查询数据库总数为:14
+2018-06-14 13:13:57,338  INFO SqlControll:55 ---- 查询数据库总数为:14
+2018-06-14 13:13:57,381  INFO SqlControll:55 ---- 查询数据库总数为:14
+2018-06-14 13:14:23,390  INFO SqlControll:55 ---- 查询数据库总数为:14
+2018-06-14 13:14:23,410  INFO SqlControll:55 ---- 查询数据库总数为:14
+2018-06-14 13:14:23,722  INFO SqlControll:55 ---- 查询数据库总数为:14
+2018-06-14 13:14:23,731  INFO SqlControll:55 ---- 查询数据库总数为:14
+2018-06-14 13:14:24,986  INFO SqlControll:55 ---- 查询数据库总数为:14
+2018-06-14 13:14:25,007  INFO SqlControll:55 ---- 查询数据库总数为:14
+2018-06-14 13:16:08,457  INFO SqlControll:55 ---- 查询数据库总数为:14
+2018-06-14 13:16:08,484  INFO SqlControll:55 ---- 查询数据库总数为:14
+2018-06-14 13:16:09,050  INFO SqlControll:55 ---- 查询数据库总数为:14
+2018-06-14 13:16:09,107  INFO SqlControll:55 ---- 查询数据库总数为:14
+2018-06-14 13:16:09,381  INFO SqlControll:55 ---- 查询数据库总数为:14
+2018-06-14 13:16:09,443  INFO SqlControll:55 ---- 查询数据库总数为:14
+2018-06-14 13:16:51,515  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:16:51,551  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:17:46,006  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:17:46,025  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:17:51,356  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:17:52,945  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:20:48,134  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:20:48,232  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:22:20,999  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:22:21,008  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:22:21,943  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:22:21,996  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:22:55,466  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:22:55,499  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:22:56,330  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:22:56,417  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:23:11,665  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:23:11,671  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:23:12,292  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:23:12,303  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:23:44,165  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:23:44,177  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:23:44,816  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:23:44,842  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:25:16,408  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:25:16,432  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:25:21,008  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:25:21,016  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:25:37,338  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:25:37,372  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:25:55,893  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:25:55,922  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:25:56,726  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:25:56,771  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:25:57,334  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:25:57,349  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:26:35,709  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:26:35,725  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:33:46,646  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:33:46,676  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:33:48,747  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:33:48,759  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:38:13,202  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:38:13,231  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:38:51,763  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:38:51,785  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:39:23,962  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:39:23,987  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:39:24,613  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:39:24,636  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:39:44,631  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:39:44,650  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:39:45,318  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:39:45,347  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:40:07,232  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:40:07,265  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:40:07,855  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:40:07,876  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:42:31,533  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:42:31,555  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:42:32,383  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:42:32,606  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:43:19,731  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:43:19,815  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:43:20,933  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:43:20,960  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:45:11,080  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:45:11,093  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:45:11,616  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:45:11,665  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:45:12,123  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:45:12,147  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:46:04,530  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:46:04,543  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:46:05,224  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:46:05,235  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:46:31,245  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:46:31,282  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:46:57,321  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:46:57,339  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:47:06,109  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:47:06,132  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:47:16,562  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:47:16,573  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:47:39,551  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:47:39,578  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:47:40,330  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:47:40,346  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:50:59,197  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:50:59,211  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:50:59,963  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:50:59,967  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:51:00,723  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:51:00,747  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:51:01,358  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:51:01,384  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:51:44,287  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:51:44,301  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:52:05,926  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:52:08,318  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:52:15,541  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:52:15,565  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:52:19,582  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:52:19,586  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:52:28,086  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:52:28,112  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:52:46,586  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:52:46,591  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:52:58,182  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:52:58,189  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:53:16,432  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:53:16,455  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:53:18,540  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:53:18,558  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:53:28,503  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:53:28,508  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:53:37,073  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:53:37,124  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:53:46,604  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:53:46,617  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:53:55,095  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:53:55,101  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:54:27,996  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:54:28,018  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:54:34,563  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:54:34,572  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:55:09,846  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:55:09,867  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:55:19,399  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:55:19,404  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:55:30,775  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:55:30,801  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:55:38,661  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:55:38,666  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:55:39,146  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:55:39,209  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:55:53,770  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:55:53,791  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:55:54,372  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:55:54,406  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:56:39,594  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:56:39,611  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:56:40,591  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:56:40,634  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:56:45,854  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:56:45,875  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:57:01,703  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:57:01,734  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:57:11,073  INFO SqlControll:55 ---- 查询数据库总数为:15
+2018-06-14 13:57:12,640  INFO SqlControll:55 ---- 查询数据库总数为:15

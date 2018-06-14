@@ -13,14 +13,24 @@ public class SqlInfoBean implements Serializable {
     private String sqlconninfo;
     private String sqlusername;
     private String sqlpassword;
+    private String sqlname;
+
+    public String getSqlname() {
+        return sqlname;
+    }
+
+    public void setSqlname(String sqlname) {
+        this.sqlname = sqlname;
+    }
 
     public SqlInfoBean()
     {
         super();
     }
 
-    public SqlInfoBean(int id,String sqlmode,String sqlconninfo,String sqlusername,String sqlpassword)
+    public SqlInfoBean(int id,String sqlmode,String sqlconninfo,String sqlusername,String sqlpassword,String sqlname)
     {
+        this.sqlname = sqlname;
         this.id = id;
         this.sqlmode = sqlmode;
         this.sqlconninfo = sqlconninfo;
@@ -28,9 +38,10 @@ public class SqlInfoBean implements Serializable {
         this.sqlpassword = sqlpassword;
     }
 
-    public SqlInfoBean(String sqlmode,String sqlconninfo,String sqlusername,String sqlpassword)
+    public SqlInfoBean(String sqlmode,String sqlconninfo,String sqlusername,String sqlpassword,String sqlname)
     {
         this.sqlmode = sqlmode;
+        this.sqlname = sqlname;
         this.sqlconninfo = sqlconninfo;
         this.sqlusername = sqlusername;
         this.sqlpassword = sqlpassword;
