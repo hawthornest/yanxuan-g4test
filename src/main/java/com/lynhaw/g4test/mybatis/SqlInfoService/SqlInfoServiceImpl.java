@@ -35,8 +35,8 @@ public class SqlInfoServiceImpl implements SqlService{
     }
 
     @Override
-    public int insert(String sqlmode,String sqlconninfo,String sqlusername,String sqlpassword) {
-        SqlInfoBean sqlInfoBean = new SqlInfoBean(sqlmode,sqlconninfo,sqlusername,sqlpassword);
+    public int insert(String sqlmode,String sqlconninfo,String sqlusername,String sqlpassword,String sqlname) {
+        SqlInfoBean sqlInfoBean = new SqlInfoBean(sqlmode,sqlconninfo,sqlusername,sqlpassword,sqlname);
         return sqlInfoMapper.addsqlInfo(sqlInfoBean);
     }
 
@@ -44,5 +44,16 @@ public class SqlInfoServiceImpl implements SqlService{
     public List<SqlInfoBean> getLimitSqlInfoBeanInfo(int limitStart, int limitEnd) {
         SqlInfoBean sqlInfoBean = new SqlInfoBean();
         return sqlInfoMapper.findlimitsqlInfo(limitStart,limitEnd );
+    }
+
+    @Override
+    public int deleteSqlInfo(int id) {
+        return  sqlInfoMapper.deleteSql(id);
+    }
+
+    @Override
+    public int updateSqlInfo(String sqlmode, String sqlconninfo, String sqlusername, String sqlpassword, String sqlname, int id) {
+        SqlInfoBean sqlInfoBean = new SqlInfoBean(id,sqlmode,sqlconninfo,sqlusername,sqlpassword,sqlname);
+        return sqlInfoMapper.updateSql(sqlInfoBean);
     }
 }

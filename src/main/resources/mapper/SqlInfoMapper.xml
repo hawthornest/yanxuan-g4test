@@ -18,9 +18,16 @@
         select * from TB_YX_G4TEST_SQLINFO limit #{limitStart},#{limitEnd}
     </select>
     <insert id="addsqlInfo" parameterType="com.lynhaw.g4test.mybatis.beans.SqlInfoBean">
-        insert into TB_YX_G4TEST_SQLINFO (sqlmode,sqlconninfo,sqlusername,sqlpassword)
-        values (#{sqlmode,jdbcType=VARCHAR},#{sqlconninfo,jdbcType=VARCHAR},#{sqlusername,jdbcType=VARCHAR},#{sqlpassword,jdbcType=VARCHAR}
+        insert into TB_YX_G4TEST_SQLINFO (sqlmode,sqlconninfo,sqlusername,sqlpassword,sqlname)
+        values (#{sqlmode,jdbcType=VARCHAR},#{sqlconninfo,jdbcType=VARCHAR},#{sqlusername,jdbcType=VARCHAR},#{sqlpassword,jdbcType=VARCHAR},#{sqlname,jdbcType=VARCHAR}
         )
     </insert>
+    <delete id="deleteSql" parameterType="java.lang.Integer">
+        delete from TB_YX_G4TEST_SQLINFO where id = #{id}
+    </delete>
+
+    <update  id="updateSql" parameterType="com.lynhaw.g4test.mybatis.beans.SqlInfoBean">
+      UPDATE TB_YX_G4TEST_SQLINFO SET sqlmode=#{sqlmode},sqlconninfo=#{sqlconninfo},sqlusername=#{sqlusername},sqlpassword=#{sqlpassword},sqlname=#{sqlname} where id=#{id}
+    </update >
 
 </mapper>

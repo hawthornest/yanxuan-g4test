@@ -64,7 +64,7 @@ public class SqlControll {
 
     @ApiOperation(value="新增维护的数据库信息", notes="")
     @RequestMapping("/insertSql")
-    public int insertSqlInfo(String sqlmode,String sqlconninfo,String sqlusername,String sqlpassword)
+    public int insertSqlInfo(String sqlmode,String sqlconninfo,String sqlusername,String sqlpassword,String sqlname)
     {
         String content = "I am noob " ;
         String pattern="";
@@ -75,13 +75,13 @@ public class SqlControll {
         }
         else
         {
-            pattern = ".*?key=.*secret.key&logdir=.*";
+            pattern = ".*key=.*secret.key.*";
 
         }
         boolean isMatch = Pattern.matches(pattern, sqlconninfo);
         if (isMatch)
         {
-            insertResult = sqlService.insert(sqlmode,sqlconninfo,sqlusername,sqlpassword);
+            insertResult = sqlService.insert(sqlmode,sqlconninfo,sqlusername,sqlpassword,sqlname);
         }
         else{
             logger.info("输入的数据库信息未满足校验条件");
@@ -89,5 +89,43 @@ public class SqlControll {
         return insertResult;
     }
 
+    @ApiOperation(value="删除维护的数据库信息", notes="")
+    @RequestMapping("/deleteSql")
+    public String delSql(int id)
+    {
+        logger.info("需要删除的数据库id为:"+id);
+        int result = sqlService.deleteSqlInfo(id);
+        JSONObject jsonResult = new JSONObject();
+        if (result==1)
+        {
+            logger.info("删除数据库表记录的结果为成功");
+            jsonResult.put("code",200);
+        }
+        else{
+            logger.info("删除数据库表记录的结果为失败");
+            jsonResult.put("code",400);
+        }
+        return jsonResult.toJSONString();
+    }
+
+
+    @ApiOperation(value="修改数据库信息", notes="")
+    @RequestMapping("/updateSql")
+    public String updateSql(String sqlmode, String sqlconninfo, String sqlusername, String sqlpassword, String sqlname, int id)
+    {
+        logger.info("需要修改的数据库id为:"+id);
+        int result = sqlService.updateSqlInfo(sqlmode,sqlconninfo,sqlusername,sqlpassword,sqlname,id);
+        JSONObject jsonResult = new JSONObject();
+        if (result==1)
+        {
+            logger.info("修改数据库表记录的结果为成功");
+            jsonResult.put("code",200);
+        }
+        else{
+            logger.info("修改数据库表记录的结果为失败");
+            jsonResult.put("code",400);
+        }
+        return jsonResult.toJSONString();
+    }
 
 }

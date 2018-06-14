@@ -21,5 +21,7 @@ public interface  SqlInfoMapper {
     public List<SqlInfoBean> findsqlInfobyInfo(@Param("sqltestinfo")String sqltestinfo);
     public int addsqlInfo(SqlInfoBean sqlInfoBean);
     public List<SqlInfoBean> findlimitsqlInfo(@Param("limitStart")int limitStart, @Param("limitEnd")int limitEnd);
+    public int deleteSql(@Param("id")int id);
+    public int updateSql(SqlInfoBean sqlInfoBean);
 
 }
