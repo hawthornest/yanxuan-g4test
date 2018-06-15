@@ -35,10 +35,10 @@ function selectSqlInfo(limitStart,limitEnd,info) {
         $.get(genXmlUrl+requestParam,function(resdata)
         {
             var sqldata = $.parseJSON(resdata).data;
-            showaddSqlInfo('light',sqldata[datalenght]);
+            // showaddSqlInfo('light',sqldata[datalenght]);
             for(datalenght = 0; datalenght < sqldata.length; datalenght++) {
                 console.log(sqldata[datalenght])
-                tbody += "<tr><td id='sqlid"+datalenght+"'>"+sqldata[datalenght].id+"</td><td id='sqlname"+datalenght+"'>"+sqldata[datalenght].sqlname+"</td><td id='sqlmode"+datalenght+"'>"+sqldata[datalenght].sqlmode+"</td><td id='sqlconninfo"+datalenght+"'>"+sqldata[datalenght].sqlconninfo+"</td><td id='sqlusername"+datalenght+"'>"+sqldata[datalenght].sqlusername+"</td><td id='sqlpassword"+datalenght+"'>"+sqldata[datalenght].sqlpassword+"</td><td id='sqldel"+datalenght+"'><button class='btn-link' onclick='delSqlInfo("+sqldata[datalenght].id+")'>删除</button><button id='sqledit"+datalenght+"' class=\"btn-link\" onclick=\"showaddSqlInfo('light',"+sqldata[datalenght]+")\">修改</button></td></tr>";
+                tbody += "<tr><td id='sqlid"+datalenght+"'>"+sqldata[datalenght].id+"</td><td id='sqlname"+datalenght+"'>"+sqldata[datalenght].sqlname+"</td><td id='sqlmode"+datalenght+"'>"+sqldata[datalenght].sqlmode+"</td><td id='sqlconninfo"+datalenght+"'>"+sqldata[datalenght].sqlconninfo+"</td><td id='sqlusername"+datalenght+"'>"+sqldata[datalenght].sqlusername+"</td><td id='sqlpassword"+datalenght+"'>"+sqldata[datalenght].sqlpassword+"</td><td id='sqldel"+datalenght+"'><button class='btn-link' onclick='delSqlInfo("+sqldata[datalenght].id+")'>删除</button><button id='sqledit"+datalenght+"' class=\"btn-link\" onclick=\"showaddSqlInfo('lighteidt','"+sqldata[datalenght].id+"','"+sqldata[datalenght].sqlname+"','"+sqldata[datalenght].sqlmode+"','"+sqldata[datalenght].sqlconninfo+"','"+sqldata[datalenght].sqlusername+"','"+sqldata[datalenght].sqlpassword+"')\">修改</button></td></tr>";
             }
             $("#sqlinfo").append(tablestart + tbody + tableend);
         });
@@ -147,7 +147,7 @@ function showaddSqlInfo(tag,sqlid,sqlname,sqlmode,sqlconninfo,sqluser,sqlpasswor
             "                    </a>\n" +
             "                </button>");
         // $('#sqladdeidtid').append("onclick='updateSqlInfo("+sqlid+")'");
-        location.reload([true]);
+
     }
 }
 //    delSqlInfo(0);
