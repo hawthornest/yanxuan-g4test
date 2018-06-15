@@ -25,9 +25,9 @@ selectSqlInfo(0,10,'');
 function selectSqlInfo(limitStart,limitEnd,info) {
     $("#sqlinfo").empty();
     $("#pagecoutid"+Math.ceil((limitStart+1)/10)).toggleClass("pagination pagination-item-active");
-    var tablestart = "<table border='1' align=\"center\">";
-    var tableend = "</table>";
-    var tbody = '<tr class="tablehead"><th style="font-weight:bold;font-size:20px;background:gray;text-align: center;">id</th><th style="font-weight:bold;font-size:20px;background:gray;text-align: center;" >数据库名</th><th style="font-weight:bold;font-size:20px;background:gray;text-align: center;">数据库类型</th><th style="font-weight:bold;font-size:20px;background:gray;text-align: center;">连接信息</th><th style="font-weight:bold;font-size:20px;background:gray;text-align: center;">用户名</th><th style="font-weight:bold;font-size:20px;background:gray;text-align: center;">密码</th><th style="font-weight:bold;font-size:20px;background:gray;text-align: center;">操作</th></tr>';
+    // var tablestart = "<table border='1' align=\"center\">";
+    // var tableend = "</table>";
+    var tbody = '<tr class="tablehead"><th style="font-weight:bold;font-size:20px;background:gray;text-align: center;">id</th><th style="font-weight:bold;font-size:20px;background:gray;text-align: center;" >数据库名</th><th style="font-weight:bold;font-size:20px;background:gray;text-align: center;">数据库类型</th><th style="font-weight:bold;font-size:20px;background:gray;text-align: center;width: 400px;">连接信息</th><th style="font-weight:bold;font-size:20px;background:gray;text-align: center;">用户名</th><th style="font-weight:bold;font-size:20px;background:gray;text-align: center;">密码</th><th style="font-weight:bold;font-size:20px;background:gray;text-align: center;">操作</th></tr>';
     if (info)
     {
         var genXmlUrl = "/getSqlInfobyinfo?";
@@ -40,7 +40,7 @@ function selectSqlInfo(limitStart,limitEnd,info) {
                 console.log(sqldata[datalenght])
                 tbody += "<tr><td id='sqlid"+datalenght+"'>"+sqldata[datalenght].id+"</td><td id='sqlname"+datalenght+"'>"+sqldata[datalenght].sqlname+"</td><td id='sqlmode"+datalenght+"'>"+sqldata[datalenght].sqlmode+"</td><td id='sqlconninfo"+datalenght+"'>"+sqldata[datalenght].sqlconninfo+"</td><td id='sqlusername"+datalenght+"'>"+sqldata[datalenght].sqlusername+"</td><td id='sqlpassword"+datalenght+"'>"+sqldata[datalenght].sqlpassword+"</td><td id='sqldel"+datalenght+"'><button class='btn-link' onclick='delSqlInfo("+sqldata[datalenght].id+")'>删除</button><button id='sqledit"+datalenght+"' class=\"btn-link\" onclick=\"showaddSqlInfo('lighteidt','"+sqldata[datalenght].id+"','"+sqldata[datalenght].sqlname+"','"+sqldata[datalenght].sqlmode+"','"+sqldata[datalenght].sqlconninfo+"','"+sqldata[datalenght].sqlusername+"','"+sqldata[datalenght].sqlpassword+"')\">修改</button></td></tr>";
             }
-            $("#sqlinfo").append(tablestart + tbody + tableend);
+            $("#sqlinfo").append(tbody);
         });
     }
     else
@@ -56,7 +56,7 @@ function selectSqlInfo(limitStart,limitEnd,info) {
             for(datalenght = 0; datalenght < sqldata.length; datalenght++) {
                 tbody += "<tr><td id='sqlid"+datalenght+"'>"+sqldata[datalenght].id+"</td><td id='sqlname"+datalenght+"'>"+sqldata[datalenght].sqlname+"</td><td id='sqlmode"+datalenght+"'>"+sqldata[datalenght].sqlmode+"</td><td id='sqlconninfo"+datalenght+"'>"+sqldata[datalenght].sqlconninfo+"</td><td id='sqlusername"+datalenght+"'>"+sqldata[datalenght].sqlusername+"</td><td id='sqlpassword"+datalenght+"'>"+sqldata[datalenght].sqlpassword+"</td><td id='sqldel"+datalenght+"'><button class='btn-link' onclick='delSqlInfo("+sqldata[datalenght].id+")'>删除</button><button id='sqledit"+datalenght+"' class=\"btn-link\" onclick=\"showaddSqlInfo('lighteidt','"+sqldata[datalenght].id+"','"+sqldata[datalenght].sqlname+"','"+sqldata[datalenght].sqlmode+"','"+sqldata[datalenght].sqlconninfo+"','"+sqldata[datalenght].sqlusername+"','"+sqldata[datalenght].sqlpassword+"')\">修改</button></td></tr>";
             }
-            $("#sqlinfo").append(tablestart + tbody + tableend);
+            $("#sqlinfo").append( tbody );
         });
     }
 }
