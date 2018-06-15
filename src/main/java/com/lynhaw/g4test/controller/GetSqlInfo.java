@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
 import java.sql.*;
 import java.util.List;
 
@@ -51,7 +53,9 @@ public class GetSqlInfo {
         {
             return "{\"code\":400,\"errorMsg\":\"输入参数不全,请完整输入id和inputSql\"}";
         }
-        String result = mySqlOper.writeSqlIfo(id, writeSql);
+        String result = null;
+            logger.info("输入请求参数为:"+writeSql);
+            result = mySqlOper.writeSqlIfo(id, writeSql);
         return result;
     }
 

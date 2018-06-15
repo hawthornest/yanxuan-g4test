@@ -45,6 +45,7 @@ function selectSqlInfo(limitStart,limitEnd,info) {
     }
     else
     {
+
         var genXmlUrl = "/getLimitSqlInfo?";
         var requestParam = "limitStart="+limitStart+"&limitEnd="+limitEnd;
         $.get(genXmlUrl+requestParam,function(resdata)
@@ -62,7 +63,8 @@ function selectSqlInfo(limitStart,limitEnd,info) {
 
 function addSqlInfo() {
     var sqlmode = $('#sqlmodeid').val();
-    var sqlinfo = $('#sqlinfoid').val();
+    var sqlinfo = encodeURIComponent($('#sqlinfoid').val());
+    console.log(sqlinfo)
     var sqlusername = $('#sqlusernameid').val();
     var sqlpassword = $('#sqlpasswordid').val();
     var sqlname = $('#sqlname').val();
@@ -93,7 +95,8 @@ function setValue(inid,outid){
 
 function updateSqlInfo(id) {
     var sqlmode = $('#sqlmodeeidtid').val();
-    var sqlinfo = $('#sqlinfoeidtid').val();
+    var sqlinfo = encodeURIComponent($('#sqlinfoeidtid').val());
+    console.log(sqlinfo)
     // var sqlinfo = document.getElementById("sqlinfoid").value;
     var sqlusername = $('#sqlusernameeidtid').val();
     var sqlpassword = $('#sqlpasswordeidtid').val();

@@ -9,6 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
 import java.util.List;
 import java.util.regex.Pattern;
 
@@ -81,7 +83,14 @@ public class SqlControll {
         boolean isMatch = Pattern.matches(pattern, sqlconninfo);
         if (isMatch)
         {
-            insertResult = sqlService.insert(sqlmode,sqlconninfo,sqlusername,sqlpassword,sqlname);
+            try {
+                logger.info("原始输入的数据库连接信息为:"+sqlconninfo);
+                insertResult = sqlService.insert(sqlmode,URLDecoder.decode(sqlconninfo, "utf-8"),sqlusername,sqlpassword,sqlname);
+                logger.info("处理后的数据库连接信息为:"+URLDecoder.decode(sqlconninfo, "utf-8"));
+            } catch (UnsupportedEncodingException e) {
+                e.printStackTrace();
+                logger.info(e);
+            }
         }
         else{
             logger.info("输入的数据库信息未满足校验条件");
@@ -114,7 +123,15 @@ public class SqlControll {
     public String updateSql(String sqlmode, String sqlconninfo, String sqlusername, String sqlpassword, String sqlname, int id)
     {
         logger.info("需要修改的数据库id为:"+id);
-        int result = sqlService.updateSqlInfo(sqlmode,sqlconninfo,sqlusername,sqlpassword,sqlname,id);
+        int result = 0;
+        try {
+            logger.info("原始输入的数据库连接信息为:"+sqlconninfo);
+            result = sqlService.updateSqlInfo(sqlmode, URLDecoder.decode(sqlconninfo, "utf-8"),sqlusername,sqlpassword,sqlname,id);
+            logger.info("处理后的数据库连接信息为:"+URLDecoder.decode(sqlconninfo, "utf-8"));
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+            logger.error(e);
+        }
         JSONObject jsonResult = new JSONObject();
         if (result==1)
         {
