@@ -6,7 +6,7 @@
 	<groupId>com.lynhaw</groupId>
 	<artifactId>g4test</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<name>g4test</name>
 	<description>g4test project for Spring Boot</description>
@@ -44,8 +44,20 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-tomcat</artifactId>
+                </exclusion>
+            </exclusions>
 			<version>RELEASE</version>
 		</dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.1.0</version>
+            <scope>provided</scope>
+        </dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
@@ -58,7 +70,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <scope>runtime</scope>
+            <version>5.1.44</version>
         </dependency>
         <dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -124,11 +136,20 @@
 
         <resources>
             <resource>
+                <directory>src/main/resources</directory>
+                <!--<includes>-->
+                    <!--<include>*.properties</include>-->
+                    <!--<include>/*/*</include>-->
+                    <!--<include>/*</include>-->
+                <!--</includes>-->
+                <filtering>false</filtering>
+            </resource>
+            <resource>
                 <directory>static</directory>
-                <includes>
-                    <include>/*</include>
-                    <include>/*/*</include>
-                </includes>
+                <!--<includes>-->
+                    <!--<include>/*</include>-->
+                    <!--<include>/*/*</include>-->
+                <!--</includes>-->
                 <filtering>false</filtering>
             </resource>
         </resources>
