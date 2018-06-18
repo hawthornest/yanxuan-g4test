@@ -289,9 +289,12 @@ th,tr,td{
     padding-bottom: 20px;
 }
 .m-foot{
+    position: fixed;
     min-width: 840px;
-    padding: 40px 150px 30px;
-    background: #f4f0ea;
+    width: 100%;
+    text-align: center;
+    background: #5b6e84;
+    bottom: 0;
 }
 .m-list li a{
     color: #333;

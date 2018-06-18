@@ -154,6 +154,8 @@
             </resource>
         </resources>
 	</build>
-
+	<profiles>
+		<profile></profile>
+	</profiles>
 
 </project>
