@@ -24,125 +24,111 @@ public class MySqlOper {
     private SqlService sqlService;
 
     Logger logger = Logger.getLogger(MySqlOper.class);
-    public String getSelectSqlIfo(int id,String inputSql)
-    {
+
+    public String getSelectSqlIfo(int id, String inputSql) {
         Connection con;
         JSONObject jsonResult = new JSONObject();
-        logger.info(String.format("输入参数为id=%s,查询sql=%s",id,inputSql));
+        logger.info(String.format("输入参数为id=%s,查询sql=%s", id, inputSql));
         List<SqlInfoBean> sqlInfoBeans = sqlService.getSqlInfoBeanInfo(id);
-        String sqlIsSqlEmpty = publicMethod.isSqlEmpty(sqlInfoBeans,jsonResult);
-        if (sqlIsSqlEmpty.equals(""))
-        {
-            logger.info("查询结果为:"+sqlInfoBeans.get(0).toString());
-            if (sqlInfoBeans.get(0).getSqlmode().equals("mysql") ||  sqlInfoBeans.get(0).getSqlmode().equals("ddb"))
-            {
+        String sqlIsSqlEmpty = publicMethod.isSqlEmpty(sqlInfoBeans, jsonResult);
+        if (sqlIsSqlEmpty.equals("")) {
+            logger.info("查询结果为:" + sqlInfoBeans.get(0).toString());
+            if (sqlInfoBeans.get(0).getSqlmode().equals("mysql") || sqlInfoBeans.get(0).getSqlmode().equals("ddb")) {
                 try {
                     if (sqlInfoBeans.get(0).getSqlmode().equals("mysql")) {
                         Class.forName("com.mysql.jdbc.Driver");
-                    }
-                    else{
+                    } else {
                         Class.forName("com.netease.backend.db.DBDriver");
                     }
                     try {
-                        con = DriverManager.getConnection(sqlInfoBeans.get(0).getSqlconninfo(),sqlInfoBeans.get(0).getSqlusername(),sqlInfoBeans.get(0).getSqlpassword());
+                        con = DriverManager.getConnection(sqlInfoBeans.get(0).getSqlconninfo(), sqlInfoBeans.get(0).getSqlusername(), sqlInfoBeans.get(0).getSqlpassword());
                         Statement statement = con.createStatement();
                         ResultSet rs = statement.executeQuery(inputSql);
                         ResultSetMetaData rsmd = rs.getMetaData();
                         JSONArray sqlJsonArray = new JSONArray();
-                        jsonResult.put("code",200);
-                        jsonResult.put("data",sqlJsonArray);
-                        while(rs.next())
-                        {
+                        jsonResult.put("code", 200);
+                        jsonResult.put("data", sqlJsonArray);
+                        while (rs.next()) {
                             JSONObject sqlColValues = new JSONObject();
-                            for (int sqlTemp=1;sqlTemp<=rsmd.getColumnCount();sqlTemp++)
-                            {
-                                sqlColValues.put(rsmd.getColumnName(sqlTemp),rs.getObject(sqlTemp));
-                                logger.info(String.format("获取到的列名为:%s,对应的值为:%s",rsmd.getColumnName(sqlTemp),rs.getObject(sqlTemp)));
+                            for (int sqlTemp = 1; sqlTemp <= rsmd.getColumnCount(); sqlTemp++) {
+                                sqlColValues.put(rsmd.getColumnName(sqlTemp), rs.getObject(sqlTemp));
+                                logger.info(String.format("获取到的列名为:%s,对应的值为:%s", rsmd.getColumnName(sqlTemp), rs.getObject(sqlTemp)));
                             }
                             sqlJsonArray.add(sqlColValues);
                         }
-                        logger.info("返回值为:"+sqlJsonArray.toJSONString());
+                        logger.info("返回值为:" + sqlJsonArray.toJSONString());
                         return jsonResult.toJSONString();
                     } catch (SQLException e) {
+                        jsonResult.put("code", 400);
+                        jsonResult.put("errMsg", "数据库无权限,请至研发平台申请权限");
                         publicMethod.OperaException(e);
                         e.printStackTrace();
+                        return jsonResult.toJSONString();
                     }
                 } catch (ClassNotFoundException e) {
+                    jsonResult.put("code", 400);
+                    jsonResult.put("errMsg", "请联系管理员");
                     publicMethod.OperaException(e);
                     e.printStackTrace();
+                    return jsonResult.toJSONString();
                 }
+            }
         }
-        }
-        else
-        {
-            return sqlIsSqlEmpty;
-        }
-        return null;
+        jsonResult.put("code", 400);
+        jsonResult.put("errMsg", "请联系管理员");
+        return jsonResult.toJSONString();
     }
 
 
-    public String writeSqlIfo(int id,String writeSql)
-    {
+    public String writeSqlIfo(int id, String writeSql) {
         Connection con;
-        logger.info(String.format("输入参数为id=%s,更新sql=%s",id,writeSql));
+        logger.info(String.format("输入参数为id=%s,更新sql=%s", id, writeSql));
         List<SqlInfoBean> sqlInfoBeans = sqlService.getSqlInfoBeanInfo(id);
         JSONObject jsonResult = new JSONObject();
-        String sqlIsSqlEmpty = publicMethod.isSqlEmpty(sqlInfoBeans,jsonResult);
-        if (sqlIsSqlEmpty.equals(""))
-        {
-            logger.info("查询结果为:"+sqlInfoBeans.get(0).toString());
-            if (sqlInfoBeans.get(0).getSqlmode().equals("mysql") || sqlInfoBeans.get(0).getSqlmode().equals("ddb"))
-            {
+        String sqlIsSqlEmpty = publicMethod.isSqlEmpty(sqlInfoBeans, jsonResult);
+        if (sqlIsSqlEmpty.equals("")) {
+            logger.info("查询结果为:" + sqlInfoBeans.get(0).toString());
+            if (sqlInfoBeans.get(0).getSqlmode().equals("mysql") || sqlInfoBeans.get(0).getSqlmode().equals("ddb")) {
                 try {
                     if (sqlInfoBeans.get(0).getSqlmode().equals("mysql")) {
                         Class.forName("com.mysql.jdbc.Driver");
                         logger.info("进入mysql数据库操作");
-                    }
-                    else{
+                    } else {
                         Class.forName("com.netease.backend.db.DBDriver");
                         logger.info("进入ddb数据库操作");
                     }
                     try {
-                        con = DriverManager.getConnection(sqlInfoBeans.get(0).getSqlconninfo(),sqlInfoBeans.get(0).getSqlusername(),sqlInfoBeans.get(0).getSqlpassword());
-                        Statement stmt=con.createStatement();
+                        con = DriverManager.getConnection(sqlInfoBeans.get(0).getSqlconninfo(), sqlInfoBeans.get(0).getSqlusername(), sqlInfoBeans.get(0).getSqlpassword());
+                        Statement stmt = con.createStatement();
                         int resultData = stmt.executeUpdate(writeSql);//执行sql语句
-                        if (resultData==1)
-                        {
-                            jsonResult.put("code",200);
-                            jsonResult.put("data",resultData);
-                        }
-                        else
-                        {
-                            jsonResult.put("code",400);
-                            jsonResult.put("data","写数据库失败");
+                        if (resultData == 1) {
+                            jsonResult.put("code", 200);
+                            jsonResult.put("data", resultData);
+                        } else {
+                            jsonResult.put("code", 400);
+                            jsonResult.put("data", "写数据库失败");
                         }
                         con.close();
                     } catch (SQLException e) {
-                        jsonResult.put("code",500);
-                        jsonResult.put("errordata","数据库连接失败");
+                        jsonResult.put("code", 400);
+                        jsonResult.put("errordata", "数据库无权限,请至研发平台申请权限");
                         publicMethod.OperaException(e);
                         e.printStackTrace();
                     }
 
                 } catch (ClassNotFoundException e) {
-                    jsonResult.put("code",500);
-                    jsonResult.put("errordata","数据库连接失败");
+                    jsonResult.put("code", 500);
+                    jsonResult.put("errordata", "数据库连接失败");
                     publicMethod.OperaException(e);
                     e.printStackTrace();
-                }finally {
+                } finally {
                     return jsonResult.toJSONString();
                 }
             }
-            else
-            {
-//            TO DO
-                return null;
-            }
-
         }
-        else
-        {
-            return sqlIsSqlEmpty;
-        }
-        }
+        jsonResult.put("code", 400);
+        jsonResult.put("data", "系统异常,请联系管理员");
+        return jsonResult.toJSONString();
+    }
 }
+
