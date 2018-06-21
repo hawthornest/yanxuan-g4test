@@ -1316,3 +1316,258 @@
 2018-06-21 14:39:22.339  INFO 34704 --- [localhost-startStop-2] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
 2018-06-21 14:39:22.347  INFO 34704 --- [localhost-startStop-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2018-06-21 14:39:22.360  INFO 34704 --- [localhost-startStop-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-06-21 14:47:51.507  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] c.l.g4test.SpringBootStartApplication    : Starting SpringBootStartApplication v0.0.1-SNAPSHOT on HIH-D-8686 with PID 33236 (E:\develop\apache-tomcat-8.5.24\webapps\ROOT\WEB-INF\classes started by hzhuyuanyuan in E:\develop\apache-tomcat-8.5.24\bin)
+2018-06-21 14:47:51.508 DEBUG 33236 --- [RMI TCP Connection(5)-127.0.0.1] c.l.g4test.SpringBootStartApplication    : Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-06-21 14:47:51.508  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] c.l.g4test.SpringBootStartApplication    : The following profiles are active: dev
+2018-06-21 14:47:51.592  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@41d2c43b: startup date [Thu Jun 21 14:47:51 CST 2018]; root of context hierarchy
+2018-06-21 14:47:52.798  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Tomcat; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]]
+2018-06-21 14:47:53.443  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$36ef38fe] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-21 14:47:53.648  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2056 ms
+2018-06-21 14:47:53.976  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-06-21 14:47:53.978  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-21 14:47:53.978  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'errorPageFilter' to: [/*]
+2018-06-21 14:47:53.978  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-21 14:47:53.979  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-21 14:47:53.979  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-21 14:47:55.265  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/selectSqlIfo]}" onto public java.lang.String com.lynhaw.g4test.controller.GetSqlInfo.GetSelectSqlIfo(int,java.lang.String)
+2018-06-21 14:47:55.267  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/writeSqlIfo]}" onto public java.lang.String com.lynhaw.g4test.controller.GetSqlInfo.updateSqlIfo(int,java.lang.String)
+2018-06-21 14:47:55.268  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getSqlInfo]}" onto public java.util.List<com.lynhaw.g4test.mybatis.beans.SqlInfoBean> com.lynhaw.g4test.controller.SqlControll.getSqlInfo(int)
+2018-06-21 14:47:55.268  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getSqlInfobyinfo]}" onto public java.lang.String com.lynhaw.g4test.controller.SqlControll.getSqlInfobyinfo(java.lang.String)
+2018-06-21 14:47:55.268  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getLimitSqlInfo]}" onto public java.lang.String com.lynhaw.g4test.controller.SqlControll.getLimitSqlInfo(int,int)
+2018-06-21 14:47:55.268  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/insertSql]}" onto public int com.lynhaw.g4test.controller.SqlControll.insertSqlInfo(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-06-21 14:47:55.268  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/deleteSql]}" onto public java.lang.String com.lynhaw.g4test.controller.SqlControll.delSql(int)
+2018-06-21 14:47:55.269  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updateSql]}" onto public java.lang.String com.lynhaw.g4test.controller.SqlControll.updateSql(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int)
+2018-06-21 14:47:55.270  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+2018-06-21 14:47:55.273  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-06-21 14:47:55.274  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-06-21 14:47:55.275  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-06-21 14:47:55.280  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-21 14:47:55.281  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-21 14:47:55.760  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-21 14:47:56.018  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@41d2c43b: startup date [Thu Jun 21 14:47:51 CST 2018]; root of context hierarchy
+2018-06-21 14:47:56.112  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-21 14:47:56.112  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-21 14:47:56.183  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2018-06-21 14:47:56.611  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-06-21 14:47:56.613  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-21 14:47:56.620  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-06-21 14:47:56.629  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-06-21 14:47:56.665  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] d.s.w.p.DocumentationPluginsBootstrapper : Found {0} custom documentation plugin(s)
+2018-06-21 14:47:56.682  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-06-21 14:47:56.687  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method delSql was sql-controll
+2018-06-21 14:47:56.690  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: delSql belongs to groups: [[ResourceGroup{groupName='sql-controll', position=0, controller=com.lynhaw.g4test.controller.SqlControll}]] 
+2018-06-21 14:47:56.692  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getLimitSqlInfo was sql-controll
+2018-06-21 14:47:56.693  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: getLimitSqlInfo belongs to groups: [[ResourceGroup{groupName='sql-controll', position=0, controller=com.lynhaw.g4test.controller.SqlControll}]] 
+2018-06-21 14:47:56.693  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getSqlInfo was sql-controll
+2018-06-21 14:47:56.693  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: getSqlInfo belongs to groups: [[ResourceGroup{groupName='sql-controll', position=0, controller=com.lynhaw.g4test.controller.SqlControll}]] 
+2018-06-21 14:47:56.693  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getSqlInfobyinfo was sql-controll
+2018-06-21 14:47:56.693  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: getSqlInfobyinfo belongs to groups: [[ResourceGroup{groupName='sql-controll', position=0, controller=com.lynhaw.g4test.controller.SqlControll}]] 
+2018-06-21 14:47:56.694  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method insertSqlInfo was sql-controll
+2018-06-21 14:47:56.694  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: insertSqlInfo belongs to groups: [[ResourceGroup{groupName='sql-controll', position=0, controller=com.lynhaw.g4test.controller.SqlControll}]] 
+2018-06-21 14:47:56.694  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method GetSelectSqlIfo was get-sql-info
+2018-06-21 14:47:56.694  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: GetSelectSqlIfo belongs to groups: [[ResourceGroup{groupName='get-sql-info', position=0, controller=com.lynhaw.g4test.controller.GetSqlInfo}]] 
+2018-06-21 14:47:56.694  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateSql was sql-controll
+2018-06-21 14:47:56.695  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: updateSql belongs to groups: [[ResourceGroup{groupName='sql-controll', position=0, controller=com.lynhaw.g4test.controller.SqlControll}]] 
+2018-06-21 14:47:56.695  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateSqlIfo was get-sql-info
+2018-06-21 14:47:56.695  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: updateSqlIfo belongs to groups: [[ResourceGroup{groupName='get-sql-info', position=0, controller=com.lynhaw.g4test.controller.GetSqlInfo}]] 
+2018-06-21 14:47:56.700  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/get-sql-info Description: get-sql-info Position: 0
+2018-06-21 14:47:56.701  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/sql-controll Description: sql-controll Position: 0
+2018-06-21 14:47:56.732  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-21 14:47:56.733  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-06-21 14:47:56.741  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-21 14:47:56.741  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-06-21 14:47:56.748  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /selectSqlIfo.com.lynhaw.g4test.controller.GetSqlInfo.GetSelectSqlIfo.DefaultGenericTypeNamingStrategy
+2018-06-21 14:47:56.748  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /selectSqlIfo.com.lynhaw.g4test.controller.GetSqlInfo.GetSelectSqlIfo.DefaultGenericTypeNamingStrategy
+2018-06-21 14:47:56.768  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method GetSelectSqlIfo was get-sql-info
+2018-06-21 14:47:56.791  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method GetSelectSqlIfo was get-sql-info
+2018-06-21 14:47:56.799  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method GetSelectSqlIfo was get-sql-info
+2018-06-21 14:47:56.800  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method GetSelectSqlIfo was get-sql-info
+2018-06-21 14:47:56.802  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method GetSelectSqlIfo was get-sql-info
+2018-06-21 14:47:56.804  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method GetSelectSqlIfo was get-sql-info
+2018-06-21 14:47:56.806  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method GetSelectSqlIfo was get-sql-info
+2018-06-21 14:47:56.807  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method GetSelectSqlIfo was get-sql-info
+2018-06-21 14:47:56.809  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method GetSelectSqlIfo was get-sql-info
+2018-06-21 14:47:56.811  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method GetSelectSqlIfo was get-sql-info
+2018-06-21 14:47:56.813  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method GetSelectSqlIfo was get-sql-info
+2018-06-21 14:47:56.814  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method GetSelectSqlIfo was get-sql-info
+2018-06-21 14:47:56.817  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method GetSelectSqlIfo was get-sql-info
+2018-06-21 14:47:56.819  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method GetSelectSqlIfo was get-sql-info
+2018-06-21 14:47:56.823  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method GetSelectSqlIfo was get-sql-info
+2018-06-21 14:47:56.824  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method GetSelectSqlIfo was get-sql-info
+2018-06-21 14:47:56.831  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-21 14:47:56.831  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-06-21 14:47:56.832  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-21 14:47:56.832  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-06-21 14:47:56.832  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /writeSqlIfo.com.lynhaw.g4test.controller.GetSqlInfo.updateSqlIfo.DefaultGenericTypeNamingStrategy
+2018-06-21 14:47:56.832  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /writeSqlIfo.com.lynhaw.g4test.controller.GetSqlInfo.updateSqlIfo.DefaultGenericTypeNamingStrategy
+2018-06-21 14:47:56.835  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateSqlIfo was get-sql-info
+2018-06-21 14:47:56.836  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateSqlIfo was get-sql-info
+2018-06-21 14:47:56.838  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateSqlIfo was get-sql-info
+2018-06-21 14:47:56.839  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateSqlIfo was get-sql-info
+2018-06-21 14:47:56.841  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateSqlIfo was get-sql-info
+2018-06-21 14:47:56.842  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateSqlIfo was get-sql-info
+2018-06-21 14:47:56.847  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateSqlIfo was get-sql-info
+2018-06-21 14:47:56.848  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateSqlIfo was get-sql-info
+2018-06-21 14:47:56.849  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateSqlIfo was get-sql-info
+2018-06-21 14:47:56.850  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateSqlIfo was get-sql-info
+2018-06-21 14:47:56.851  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateSqlIfo was get-sql-info
+2018-06-21 14:47:56.852  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateSqlIfo was get-sql-info
+2018-06-21 14:47:56.854  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateSqlIfo was get-sql-info
+2018-06-21 14:47:56.854  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateSqlIfo was get-sql-info
+2018-06-21 14:47:56.857  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateSqlIfo was get-sql-info
+2018-06-21 14:47:56.857  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateSqlIfo was get-sql-info
+2018-06-21 14:47:56.865  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-21 14:47:56.865  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-06-21 14:47:56.866  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-21 14:47:56.866  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-06-21 14:47:56.866  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /deleteSql.com.lynhaw.g4test.controller.SqlControll.delSql.DefaultGenericTypeNamingStrategy
+2018-06-21 14:47:56.866  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /deleteSql.com.lynhaw.g4test.controller.SqlControll.delSql.DefaultGenericTypeNamingStrategy
+2018-06-21 14:47:56.867  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method delSql was sql-controll
+2018-06-21 14:47:56.867  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method delSql was sql-controll
+2018-06-21 14:47:56.868  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method delSql was sql-controll
+2018-06-21 14:47:56.869  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method delSql was sql-controll
+2018-06-21 14:47:56.870  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method delSql was sql-controll
+2018-06-21 14:47:56.870  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method delSql was sql-controll
+2018-06-21 14:47:56.871  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method delSql was sql-controll
+2018-06-21 14:47:56.873  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method delSql was sql-controll
+2018-06-21 14:47:56.878  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method delSql was sql-controll
+2018-06-21 14:47:56.878  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method delSql was sql-controll
+2018-06-21 14:47:56.880  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method delSql was sql-controll
+2018-06-21 14:47:56.880  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method delSql was sql-controll
+2018-06-21 14:47:56.881  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method delSql was sql-controll
+2018-06-21 14:47:56.881  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method delSql was sql-controll
+2018-06-21 14:47:56.882  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method delSql was sql-controll
+2018-06-21 14:47:56.884  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method delSql was sql-controll
+2018-06-21 14:47:56.885  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-21 14:47:56.886  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-06-21 14:47:56.886  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-21 14:47:56.886  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-06-21 14:47:56.886  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /getLimitSqlInfo.com.lynhaw.g4test.controller.SqlControll.getLimitSqlInfo.DefaultGenericTypeNamingStrategy
+2018-06-21 14:47:56.886  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /getLimitSqlInfo.com.lynhaw.g4test.controller.SqlControll.getLimitSqlInfo.DefaultGenericTypeNamingStrategy
+2018-06-21 14:47:56.888  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getLimitSqlInfo was sql-controll
+2018-06-21 14:47:56.889  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getLimitSqlInfo was sql-controll
+2018-06-21 14:47:56.890  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getLimitSqlInfo was sql-controll
+2018-06-21 14:47:56.891  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getLimitSqlInfo was sql-controll
+2018-06-21 14:47:56.893  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getLimitSqlInfo was sql-controll
+2018-06-21 14:47:56.894  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getLimitSqlInfo was sql-controll
+2018-06-21 14:47:56.896  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getLimitSqlInfo was sql-controll
+2018-06-21 14:47:56.898  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getLimitSqlInfo was sql-controll
+2018-06-21 14:47:56.900  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getLimitSqlInfo was sql-controll
+2018-06-21 14:47:56.901  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getLimitSqlInfo was sql-controll
+2018-06-21 14:47:56.902  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getLimitSqlInfo was sql-controll
+2018-06-21 14:47:56.903  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getLimitSqlInfo was sql-controll
+2018-06-21 14:47:56.905  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getLimitSqlInfo was sql-controll
+2018-06-21 14:47:56.906  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getLimitSqlInfo was sql-controll
+2018-06-21 14:47:56.907  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getLimitSqlInfo was sql-controll
+2018-06-21 14:47:56.908  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getLimitSqlInfo was sql-controll
+2018-06-21 14:47:56.908  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.List<com.lynhaw.g4test.mybatis.beans.SqlInfoBean>(true)
+2018-06-21 14:47:56.908  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.util.List<com.lynhaw.g4test.mybatis.beans.SqlInfoBean>(true)
+2018-06-21 14:47:56.909  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.List<com.lynhaw.g4test.mybatis.beans.SqlInfoBean>(true)
+2018-06-21 14:47:56.909  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.util.List<com.lynhaw.g4test.mybatis.beans.SqlInfoBean>(true)
+2018-06-21 14:47:56.914  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.lynhaw.g4test.mybatis.beans.SqlInfoBean(true)
+2018-06-21 14:47:56.914  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.lynhaw.g4test.mybatis.beans.SqlInfoBean(true)
+2018-06-21 14:47:56.956  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: java.util.List<com.lynhaw.g4test.mybatis.beans.SqlInfoBean>(true)
+2018-06-21 14:47:56.956  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key java.util.List<com.lynhaw.g4test.mybatis.beans.SqlInfoBean>(true)
+2018-06-21 14:47:56.956  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.lynhaw.g4test.mybatis.beans.SqlInfoBean(true)
+2018-06-21 14:47:56.956  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.lynhaw.g4test.mybatis.beans.SqlInfoBean(true)
+2018-06-21 14:47:56.959  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /getSqlInfo.com.lynhaw.g4test.controller.SqlControll.getSqlInfo.DefaultGenericTypeNamingStrategy
+2018-06-21 14:47:56.959  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /getSqlInfo.com.lynhaw.g4test.controller.SqlControll.getSqlInfo.DefaultGenericTypeNamingStrategy
+2018-06-21 14:47:56.960  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getSqlInfo was sql-controll
+2018-06-21 14:47:56.961  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getSqlInfo was sql-controll
+2018-06-21 14:47:56.962  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getSqlInfo was sql-controll
+2018-06-21 14:47:56.963  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getSqlInfo was sql-controll
+2018-06-21 14:47:56.965  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getSqlInfo was sql-controll
+2018-06-21 14:47:56.965  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getSqlInfo was sql-controll
+2018-06-21 14:47:56.966  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getSqlInfo was sql-controll
+2018-06-21 14:47:56.966  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getSqlInfo was sql-controll
+2018-06-21 14:47:56.967  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getSqlInfo was sql-controll
+2018-06-21 14:47:56.968  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getSqlInfo was sql-controll
+2018-06-21 14:47:56.969  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getSqlInfo was sql-controll
+2018-06-21 14:47:56.969  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getSqlInfo was sql-controll
+2018-06-21 14:47:56.970  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getSqlInfo was sql-controll
+2018-06-21 14:47:56.971  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getSqlInfo was sql-controll
+2018-06-21 14:47:56.972  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getSqlInfo was sql-controll
+2018-06-21 14:47:56.972  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getSqlInfo was sql-controll
+2018-06-21 14:47:56.973  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-21 14:47:56.973  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-06-21 14:47:56.973  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-21 14:47:56.973  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-06-21 14:47:56.973  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /getSqlInfobyinfo.com.lynhaw.g4test.controller.SqlControll.getSqlInfobyinfo.DefaultGenericTypeNamingStrategy
+2018-06-21 14:47:56.973  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /getSqlInfobyinfo.com.lynhaw.g4test.controller.SqlControll.getSqlInfobyinfo.DefaultGenericTypeNamingStrategy
+2018-06-21 14:47:56.974  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getSqlInfobyinfo was sql-controll
+2018-06-21 14:47:56.974  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getSqlInfobyinfo was sql-controll
+2018-06-21 14:47:56.975  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getSqlInfobyinfo was sql-controll
+2018-06-21 14:47:56.976  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getSqlInfobyinfo was sql-controll
+2018-06-21 14:47:56.977  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getSqlInfobyinfo was sql-controll
+2018-06-21 14:47:56.977  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getSqlInfobyinfo was sql-controll
+2018-06-21 14:47:56.978  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getSqlInfobyinfo was sql-controll
+2018-06-21 14:47:56.978  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getSqlInfobyinfo was sql-controll
+2018-06-21 14:47:56.979  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getSqlInfobyinfo was sql-controll
+2018-06-21 14:47:56.980  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getSqlInfobyinfo was sql-controll
+2018-06-21 14:47:56.980  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getSqlInfobyinfo was sql-controll
+2018-06-21 14:47:56.981  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getSqlInfobyinfo was sql-controll
+2018-06-21 14:47:56.982  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getSqlInfobyinfo was sql-controll
+2018-06-21 14:47:56.982  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getSqlInfobyinfo was sql-controll
+2018-06-21 14:47:56.983  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getSqlInfobyinfo was sql-controll
+2018-06-21 14:47:56.983  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getSqlInfobyinfo was sql-controll
+2018-06-21 14:47:56.984  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: int(true)
+2018-06-21 14:47:56.984  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key int(true)
+2018-06-21 14:47:56.984  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: int(true)
+2018-06-21 14:47:56.984  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key int(true)
+2018-06-21 14:47:56.985  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /insertSql.com.lynhaw.g4test.controller.SqlControll.insertSqlInfo.DefaultGenericTypeNamingStrategy
+2018-06-21 14:47:56.985  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /insertSql.com.lynhaw.g4test.controller.SqlControll.insertSqlInfo.DefaultGenericTypeNamingStrategy
+2018-06-21 14:47:56.987  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method insertSqlInfo was sql-controll
+2018-06-21 14:47:56.987  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method insertSqlInfo was sql-controll
+2018-06-21 14:47:56.990  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method insertSqlInfo was sql-controll
+2018-06-21 14:47:56.991  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method insertSqlInfo was sql-controll
+2018-06-21 14:47:56.994  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method insertSqlInfo was sql-controll
+2018-06-21 14:47:56.994  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method insertSqlInfo was sql-controll
+2018-06-21 14:47:56.997  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method insertSqlInfo was sql-controll
+2018-06-21 14:47:56.997  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method insertSqlInfo was sql-controll
+2018-06-21 14:47:56.999  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method insertSqlInfo was sql-controll
+2018-06-21 14:47:57.000  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method insertSqlInfo was sql-controll
+2018-06-21 14:47:57.002  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method insertSqlInfo was sql-controll
+2018-06-21 14:47:57.003  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method insertSqlInfo was sql-controll
+2018-06-21 14:47:57.005  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method insertSqlInfo was sql-controll
+2018-06-21 14:47:57.006  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method insertSqlInfo was sql-controll
+2018-06-21 14:47:57.008  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method insertSqlInfo was sql-controll
+2018-06-21 14:47:57.009  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method insertSqlInfo was sql-controll
+2018-06-21 14:47:57.010  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-21 14:47:57.010  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-06-21 14:47:57.011  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-21 14:47:57.011  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-06-21 14:47:57.011  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /updateSql.com.lynhaw.g4test.controller.SqlControll.updateSql.DefaultGenericTypeNamingStrategy
+2018-06-21 14:47:57.011  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /updateSql.com.lynhaw.g4test.controller.SqlControll.updateSql.DefaultGenericTypeNamingStrategy
+2018-06-21 14:47:57.014  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateSql was sql-controll
+2018-06-21 14:47:57.015  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateSql was sql-controll
+2018-06-21 14:47:57.017  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateSql was sql-controll
+2018-06-21 14:47:57.018  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateSql was sql-controll
+2018-06-21 14:47:57.020  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateSql was sql-controll
+2018-06-21 14:47:57.021  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateSql was sql-controll
+2018-06-21 14:47:57.027  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateSql was sql-controll
+2018-06-21 14:47:57.027  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateSql was sql-controll
+2018-06-21 14:47:57.031  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateSql was sql-controll
+2018-06-21 14:47:57.031  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateSql was sql-controll
+2018-06-21 14:47:57.034  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateSql was sql-controll
+2018-06-21 14:47:57.035  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateSql was sql-controll
+2018-06-21 14:47:57.038  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateSql was sql-controll
+2018-06-21 14:47:57.039  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateSql was sql-controll
+2018-06-21 14:47:57.043  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateSql was sql-controll
+2018-06-21 14:47:57.044  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateSql was sql-controll
+2018-06-21 14:47:57.070  INFO 33236 --- [RMI TCP Connection(5)-127.0.0.1] c.l.g4test.SpringBootStartApplication    : Started SpringBootStartApplication in 6.179 seconds (JVM running for 10.084)
+2018-06-21 14:47:57.625  INFO 33236 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-21 14:47:57.666  INFO 33236 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 41 ms
+2018-06-21 14:47:58.592  INFO 33236 --- [http-nio-8085-exec-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-06-21 14:47:58.893  INFO 33236 --- [http-nio-8085-exec-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-06-21 14:47:58.901 DEBUG 33236 --- [http-nio-8085-exec-7] c.l.g.m.m.SqlInfoMapper.findsqlcount     : ==>  Preparing: select count(1) from TB_YX_G4TEST_SQLINFO 
+2018-06-21 14:47:58.921 DEBUG 33236 --- [http-nio-8085-exec-7] c.l.g.m.m.SqlInfoMapper.findsqlcount     : ==> Parameters: 
+2018-06-21 14:47:58.940 DEBUG 33236 --- [http-nio-8085-exec-7] c.l.g.m.m.SqlInfoMapper.findsqlcount     : <==      Total: 1
+2018-06-21 14:47:58.958 DEBUG 33236 --- [http-nio-8085-exec-7] c.l.g.m.m.S.findlimitsqlInfo             : ==>  Preparing: select * from TB_YX_G4TEST_SQLINFO limit ?,? 
+2018-06-21 14:47:58.958 DEBUG 33236 --- [http-nio-8085-exec-7] c.l.g.m.m.S.findlimitsqlInfo             : ==> Parameters: 0(Integer), 10(Integer)
+2018-06-21 14:47:58.969 DEBUG 33236 --- [http-nio-8085-exec-7] c.l.g.m.m.S.findlimitsqlInfo             : <==      Total: 10
+2018-06-21 14:47:59.151 DEBUG 33236 --- [http-nio-8085-exec-8] c.l.g.m.m.SqlInfoMapper.findsqlcount     : ==>  Preparing: select count(1) from TB_YX_G4TEST_SQLINFO 
+2018-06-21 14:47:59.151 DEBUG 33236 --- [http-nio-8085-exec-8] c.l.g.m.m.SqlInfoMapper.findsqlcount     : ==> Parameters: 
+2018-06-21 14:47:59.159 DEBUG 33236 --- [http-nio-8085-exec-8] c.l.g.m.m.SqlInfoMapper.findsqlcount     : <==      Total: 1
+2018-06-21 14:47:59.159 DEBUG 33236 --- [http-nio-8085-exec-8] c.l.g.m.m.S.findlimitsqlInfo             : ==>  Preparing: select * from TB_YX_G4TEST_SQLINFO limit ?,? 
+2018-06-21 14:47:59.160 DEBUG 33236 --- [http-nio-8085-exec-8] c.l.g.m.m.S.findlimitsqlInfo             : ==> Parameters: 0(Integer), 10(Integer)
+2018-06-21 14:47:59.163 DEBUG 33236 --- [http-nio-8085-exec-8] c.l.g.m.m.S.findlimitsqlInfo             : <==      Total: 10

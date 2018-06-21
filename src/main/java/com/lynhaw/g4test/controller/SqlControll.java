@@ -5,7 +5,7 @@ import com.lynhaw.g4test.mybatis.SqlInfoService.SqlService;
 import com.lynhaw.g4test.mybatis.beans.SqlInfoBean;
 import io.swagger.annotations.ApiOperation;
 import org.apache.log4j.Logger;
-import org.slf4j.MDC;
+import org.apache.log4j.MDC;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -60,7 +60,6 @@ public class SqlControll {
     public  String getLimitSqlInfo(int limitStart,int limitEnd)
     {
         MDC.put("traceId", UUID.randomUUID().toString());
-        logger.info("传入的traceId为:"+MDC.get("traceId"));
 //        logger.info("传入的traceId为:"+UUID.randomUUID().toString());
         int count = sqlService.getSqlInfocount();
         logger.info("查询数据库总数为:"+count);

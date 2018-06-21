@@ -1,14 +1,9 @@
 package com.lynhaw.g4test.controller;
 
-import com.alibaba.fastjson.JSONArray;
-import com.alibaba.fastjson.JSONObject;
-import com.lynhaw.g4test.mybatis.SqlInfoService.SqlService;
-import com.lynhaw.g4test.mybatis.beans.SqlInfoBean;
 import com.lynhaw.g4test.service.MySqlOper;
-import com.lynhaw.g4test.service.PublicMethod;
 import io.swagger.annotations.ApiOperation;
 import org.apache.log4j.Logger;
-import org.slf4j.MDC;
+import org.apache.log4j.MDC;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -38,7 +33,7 @@ public class GetSqlInfo {
     @RequestMapping("/selectSqlIfo")
     public String GetSelectSqlIfo(@RequestParam(defaultValue = "999999999")int id, @RequestParam(defaultValue = "999999999")String inputSql)
     {
-        logger.info("传入的uuid:"+UUID.randomUUID().toString());
+//        logger.info("传入的uuid:"+UUID.randomUUID().toString());
         MDC.put("traceId", UUID.randomUUID().toString());
         if (id==999999999||inputSql.equals("999999999"))
         {
@@ -54,6 +49,7 @@ public class GetSqlInfo {
     @RequestMapping("/writeSqlIfo")
     public String updateSqlIfo(@RequestParam(defaultValue = "999999999")int id,@RequestParam(defaultValue = "999999999")String writeSql)
     {
+        MDC.put("traceId", UUID.randomUUID().toString());
         if (id==999999999||writeSql.equals("999999999"))
         {
             return "{\"code\":400,\"errorMsg\":\"输入参数不全,请完整输入id和inputSql\"}";
@@ -61,6 +57,7 @@ public class GetSqlInfo {
         String result = null;
             logger.info("输入请求参数为:"+writeSql);
             result = mySqlOper.writeSqlIfo(id, writeSql);
+        MDC.remove("traceId");
         return result;
     }
 
