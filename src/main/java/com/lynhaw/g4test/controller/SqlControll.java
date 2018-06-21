@@ -78,7 +78,6 @@ public class SqlControll {
     public int insertSqlInfo(String sqlmode,String sqlconninfo,String sqlusername,String sqlpassword,String sqlname)
     {
         MDC.put("traceId", UUID.randomUUID().toString());
-        String content = "I am noob " ;
         String pattern="";
         int insertResult = 0;
         if (sqlmode.equals("mysql"))

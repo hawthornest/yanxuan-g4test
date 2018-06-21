@@ -101,7 +101,7 @@ public class MySqlOper {
                         con = DriverManager.getConnection(sqlInfoBeans.get(0).getSqlconninfo(), sqlInfoBeans.get(0).getSqlusername(), sqlInfoBeans.get(0).getSqlpassword());
                         Statement stmt = con.createStatement();
                         int resultData = stmt.executeUpdate(writeSql);//执行sql语句
-                        if (resultData == 1) {
+                        if (resultData > 0) {
                             jsonResult.put("code", 200);
                             jsonResult.put("data", resultData);
                         } else {
