@@ -8,6 +8,7 @@ import com.lynhaw.g4test.service.MySqlOper;
 import com.lynhaw.g4test.service.PublicMethod;
 import io.swagger.annotations.ApiOperation;
 import org.apache.log4j.Logger;
+import org.slf4j.MDC;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -17,6 +18,7 @@ import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 import java.sql.*;
 import java.util.List;
+import java.util.UUID;
 
 /**
  * @Author yyhu3
@@ -36,11 +38,14 @@ public class GetSqlInfo {
     @RequestMapping("/selectSqlIfo")
     public String GetSelectSqlIfo(@RequestParam(defaultValue = "999999999")int id, @RequestParam(defaultValue = "999999999")String inputSql)
     {
+        logger.info("传入的uuid:"+UUID.randomUUID().toString());
+        MDC.put("traceId", UUID.randomUUID().toString());
         if (id==999999999||inputSql.equals("999999999"))
         {
             return "{\"code\":400,\"errorMsg\":\"输入参数不全,请完整输入id和inputSql\"}";
         }
         String result = mySqlOper.getSelectSqlIfo(id,inputSql);
+        MDC.remove("traceId");
         return result;
     }
 
