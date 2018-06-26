@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lynhaw.g4test.mybatis.mapper.ServerMapper">
+    <select id="selectInfobyname" resultType="com.lynhaw.g4test.mybatis.beans.ServerBeans" parameterType="string">
+        SELECT * from TB_YX_GOTEST_SERVER_INFO WHERE serverName LIKE '%${serverNameInfo}%'
+    </select>
+    <select id="findsyscount" resultType="java.lang.Integer">
+        select count(1) from TB_YX_GOTEST_SERVER_INFO
+    </select>
+    <select id="selectInfolimit" resultType="com.lynhaw.g4test.mybatis.beans.ServerBeans">
+        SELECT * FROM TB_YX_GOTEST_SERVER_INFO limit #{limitStart},#{limitEnd}
+    </select>
+    <select id="selectInfobytaskId" resultType="com.lynhaw.g4test.mybatis.beans.ServerBeans">
+        SELECT * FROM TB_YX_GOTEST_SERVER_INFO WHERE taskId = '${taskId}'
+    </select>
+    <update id="updateInfoBytaskId" parameterType="string">
+        UPDATE TB_YX_GOTEST_SERVER_INFO SET taskId = '${taskId}' WHERE id=#{id}
+    </update>
+    <insert id="insertSysInfo" parameterType="com.lynhaw.g4test.mybatis.beans.ServerBeans">
+        INSERT INTO TB_YX_GOTEST_SERVER_INFO (serverName,taskId,addressees) values (#{serverName,jdbcType=VARCHAR},#{taskId,jdbcType=VARCHAR},#{addressees,jdbcType=VARCHAR})
+    </insert>
+</mapper>
