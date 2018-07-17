@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-type" content="text/html;charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="baidu-site-verification" content="eAB3J39RXT">
+    <head><link rel="icon" href="//you.163.com/favicon.ico?r=gold" type="image/x-icon"/></head>
+    <title>严选基础服务测试管理</title>
+    <meta name="Keywords" content="网易严选">
+    <meta name="description" content="网易严选">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/js_sysinfo.js"></script>
+</head>
+
+<body>
+
+    <div class="m-head">
+        <div class="m-nav">
+            <div class="m-logo">
+                <img src="//nos.netease.com/mailpub-test/hxm/yanxuan-ark/yanxuan-ark-web/img/logo-357d1f045cbc.png" />
+            </div>
+            <ul class="m-menu">
+                <li>
+                    <a>
+                        严选基础服务测试管理平台
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="m-main">
+        <div class="sidebar" style="height: 100%;top:80px;background:#2F3542;width: 200px;position: absolute;">
+            <ul class="nav">
+                <li class="navli"><a class="nava" id="index_1" href="/index.html" style="color: #ffffff;font-weight: bold;font-size: 20px;margin-top: 20px;padding: 20px">数据库管理</a> </li>
+                <li class="navli"><a class="nava" id="index_2" href="/sysInfo.html" style="color: #ffffff;font-weight: bold;font-size: 20px;margin-top: 20px;padding: 20px">测试服务管理</a> </li>
+            </ul>
+        </div>
+        <div class="m-content" style="left: 478px;position: absolute;">
+            <div align="center" style="font-weight:bold;font-size:20px; color:#080808;padding: 20px 0;">
+                <label>
+                    测试服务名:
+                </label>
+                <input type="text" name="测试服务名" style="width: 300px;height: 25px;" id="sysaddressid">
+                <button type="button" style="font-weight:bold;font-size:20px; color:#080808"
+                        id="selectSysButton" onchange="javascript:joinPage();" onclick="selectSysInfo(0,10,document.getElementById('sysaddressid').value)">
+                    查询
+                </button>
+                <button type="button" style="font-weight:bold;font-size:20px; color:#080808"
+                        id="addSysButton" onclick="showaddSysInfo('lightSys','','')">
+                    新增
+                </button>
+            </div>
+            <div id="lightSys" class="white_content">
+                <div class="close">
+                    <a href="javascript:void(0)" onclick="hide('lightSys')">
+                        关闭
+                    </a>
+                </div>
+                <div>
+                    <label class="labelcontrol">
+                        测试服务名:
+                    </label>
+                    <input type="text" class="Inputcontrol" id="sysname" name="测试服务名" style="width: 50%">
+                </div>
+                <div>
+                    <label class="labelcontrol">
+                        收件人信息:
+                    </label>
+                    <input type="text" class="Inputcontrol" id="addressinfoid" name="收件人信息"
+                           style="width: 50%">
+                </div>
+                <button type="button" id="sysaddid" onclick="addSysInfo()" class="close">
+                    <a href="javascript:void(0)" onclick="hide('lightSys')">
+                        提交
+                    </a>
+                </button>
+            </div>
+            <div id="lightSyseidt" class="white_content" style="padding: 30px 100px;">
+                <div class="close">
+                    <a href="javascript:void(0)" onclick="hide('lightSyseidt')">
+                        关闭
+                    </a>
+                </div>
+                <div>
+                    <label class="labelcontrol">
+                        测试服务:
+                    </label>
+                    <input type="text" class="Inputcontrol"
+                           id="sysnameeidt" name="测试服务" style="width: 50%">
+                </div>
+                <div>
+                    <label class="labelcontrol">
+                        收件人:
+                    </label>
+                    <textarea type="text" class="Inputcontrol" id="addressinfoeidtid" name="收件人"
+                              style="width: 50%;height: 50px;"></textarea>
+                </div>
+                <!--<button type="button" id="sysaddeidtid"  class="close">-->
+                    <!--<a href="javascript:void(0)" onclick="hide('lightSys')">-->
+                        <!--提交-->
+                    <!--</a>-->
+                <!--</button>-->
+            </div>
+            <div id="fade" class="black_overlay"></div>
+            <table id="sysinfo" class="tablesql" align="center" border='1'></table>
+            <div class="pagination_div" >
+                <ul  id="syspaginationinfo" onchange="javascript:joinPage(document.getElementById('sysaddressid').value);">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="m-foot">
+        <div class="m-content">
+            <h4>友情链接</h4>
+            <ul class="m-list">
+                <li>
+                    <a href="/swagger-ui.html#!" style="color: #2d8cf0;">接口文档地址</a>
+                </li>
+                <li>
+                    <a style="color: #2d8cf0;">技术指导:吕子民</a>
+                </li>
+            </ul>
+            <p class="cprt">网易公司版权所有 © 1997-2018</p>
+        </div>
+    </div>
+</body>
+
+</html>
