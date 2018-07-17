@@ -26,29 +26,32 @@ public class SendEmail {
     GetProperties getProperties;
     Logger logger = Logger.getLogger(SendEmail.class);
 
-    public Message createSimpleMail(Session session) throws Exception {
+    public Message createSimpleMail(Session session,String receiveMailAccount,String serverName) throws Exception {
 
          String ownEmailAccount = getProperties.emailSender.trim();
         // 发送邮件对方的邮箱
-         String receiveMailAccount = getProperties.emailAddressee.trim();
+         receiveMailAccount = receiveMailAccount.trim();
         MimeMessage message = new MimeMessage(session);
         // 设置发送邮件地址,param1 代表发送地址 param2 代表发送的名称(任意的) param3 代表名称编码方式
         message.setFrom(new InternetAddress(ownEmailAccount, "严选自动化测试", "utf-8"));
         if(receiveMailAccount.split(",").length==1)
         {
             message.setRecipient(Message.RecipientType.TO, new InternetAddress(receiveMailAccount.split(",")[0], receiveMailAccount, "utf-8"));
+            logger.info("收件人人数为1");
             logger.info("收件人邮箱为:"+receiveMailAccount.split(",")[0]);
         }
         else {
-            for (int tempReceiveMailAccount = 1; tempReceiveMailAccount < receiveMailAccount.split(",").length; tempReceiveMailAccount++) {
+            for (int tempReceiveMailAccount = 0; tempReceiveMailAccount < receiveMailAccount.split(",").length; tempReceiveMailAccount++) {
+                logger.info("收件人人数为"+receiveMailAccount.split(",").length);
                 logger.info("收件人邮箱为:"+receiveMailAccount.split(",")[tempReceiveMailAccount]);
                 message.addRecipient(MimeMessage.RecipientType.TO, new InternetAddress(receiveMailAccount.split(",")[tempReceiveMailAccount], receiveMailAccount.split(",")[tempReceiveMailAccount], "UTF-8"));
             }
         }
         // 设置邮件主题
-        message.setSubject("自动化测试结果");
+        message.setSubject(serverName+"自动化测试结果");
         // 设置邮件内容
-        message.setContent(readToString("responseResult.html"), "text/html;charset=utf-8");
+        message.setContent(readToString("/home/webapps/yanxuan-g4test/responseResult.html"), "text/html;charset=utf-8");
+//        message.setContent(readToString("responseResult.html"), "text/html;charset=utf-8");
         // 设置发送时间
         message.setSentDate(new Date());
         // 保存上面的编辑内容
@@ -57,7 +60,7 @@ public class SendEmail {
 
     }
 
-    public void sendMail()
+    public void sendMail(String receiveMailAccount,String serverName)
     {
         Properties prop = new Properties();
         // 设置邮件传输采用的协议smtp
@@ -74,7 +77,7 @@ public class SendEmail {
         // 创建邮件对象
         Message message = null;
         try {
-            message = createSimpleMail(session);
+            message = createSimpleMail(session,receiveMailAccount,serverName);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -108,7 +111,7 @@ public class SendEmail {
 
     public static void main(String[] args) throws Exception {
         SendEmail SendEmail = new SendEmail();
-        SendEmail.sendMail();
+        SendEmail.sendMail("hyyxwf121@126.com","smartipc");
 
     }
 

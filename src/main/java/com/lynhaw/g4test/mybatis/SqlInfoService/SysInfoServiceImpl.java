@@ -21,6 +21,15 @@ public class SysInfoServiceImpl {
         return serverMapper.selectInfolimit(limitStart,limitEnd);
     }
 
+    public int updateSysInfo(String serverName, String addressees,Long id)
+    {
+        return serverMapper.updateInfo(new ServerBeans(id,serverName,addressees));
+    }
+
+    public int deleteSysInfo(Long id)
+    {
+        return serverMapper.deleteInfo(id);
+    }
 
     public List<ServerBeans> getInfobyname(String serverNameInfo) {
         return serverMapper.selectInfobyname(serverNameInfo);
@@ -31,12 +40,12 @@ public class SysInfoServiceImpl {
         return serverMapper.selectInfobytaskId(taskId);
     }
 
-    public int updateInfo(String taskId, int id) {
-        return serverMapper.updateInfoBytaskId(taskId,id);
+    public int updateInfo(String taskId,String sysBranch, int id) {
+        return serverMapper.updateInfoBytaskId(taskId,sysBranch,id);
     }
 
-    public int insertInfo(String serverName, String taskId, String addressees) {
-        return serverMapper.insertSysInfo(new ServerBeans(serverName,taskId,addressees));
+    public int insertInfo(String serverName, String addressees) {
+        return serverMapper.insertSysInfo(new ServerBeans(serverName,addressees));
     }
 
     public int getsyscount() {

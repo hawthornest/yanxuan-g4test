@@ -27,7 +27,7 @@ public class TaskRun {
     @ApiOperation(value="执行测试用例", notes="根据测试集id执行用例")
 //    @ApiImplicitParam(name = "testId", value = "测试集id", required = true, dataType = "String")
     @GetMapping("/yanxuan/taskrun")
-    public String executeTtestCase(String testId, String environmentId, String callBackUrl,int sysId)
+    public String executeTtestCase(String testId, String environmentId, String callBackUrl,int sysId,String sysBranch)
     {
         MDC.put("traceId", UUID.randomUUID().toString());
         CallBackResponse implementRespons = new CallBackResponse();
@@ -39,7 +39,8 @@ public class TaskRun {
         String errorMsg = runResponseJson.getString("msg");
         String taskId = runResponseJson.getJSONArray("data").getJSONObject(0).getString("taskId");
         logger.info("执行用例获取的taskid为:"+taskId);
-        int updateResult = sysInfoServiceImpl.updateInfo(taskId,sysId);
+        int updateResult = sysInfoServiceImpl.updateInfo(taskId,sysBranch,sysId);
+        logger.info("当前执行的测试分支为:"+sysBranch);
         logger.info("更新数据库结果为:"+updateResult);
         implementRespons.setCode(responseData);
         implementRespons.setMsg(errorMsg);

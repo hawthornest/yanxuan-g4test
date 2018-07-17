@@ -23,9 +23,9 @@ public class MailController {
 
     @ApiOperation(value="发送邮件", notes="将测试报告发送邮件给收件人")
     @GetMapping("/sendemail")
-    public String sendEmail()
+    public String sendEmail(String addressees,String serverName)
     {
-        sendEmailTest.sendMail();
+        sendEmailTest.sendMail(addressees,serverName);
         return getProperties.emailSender;
     }
 }

@@ -9,7 +9,7 @@ import org.springframework.context.annotation.PropertySource;
  * @Date 2018-05-08 20:05
  */
 @Configuration
-@PropertySource(value = {"classpath:/config/dynamic.properties"})
+//@PropertySource(value = {"classpath:/config/dynamic.properties"})
 public class GetProperties {
     @Value("${email.sender}")
     public String emailSender;
@@ -19,7 +19,5 @@ public class GetProperties {
     public String emailMailHost;
     @Value("${email.mailPort}")
     public String emailMailPort;
-    @Value("${email.Addressee}")
-    public String emailAddressee;
 
 }
