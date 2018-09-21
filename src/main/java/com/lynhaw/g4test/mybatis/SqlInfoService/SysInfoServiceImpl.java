@@ -40,8 +40,8 @@ public class SysInfoServiceImpl {
         return serverMapper.selectInfobytaskId(taskId);
     }
 
-    public int updateInfo(String taskId,String sysBranch, int id) {
-        return serverMapper.updateInfoBytaskId(taskId,sysBranch,id);
+    public int updateInfo(String taskId,String sysBranch,int isneed ,int id) {
+        return serverMapper.updateInfoBytaskId(taskId,sysBranch,isneed,id);
     }
 
     public int insertInfo(String serverName, String addressees) {

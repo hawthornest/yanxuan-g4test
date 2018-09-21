@@ -11,6 +11,15 @@ public class ServerBeans {
     private Long id;
     private Long updateTime;
     private String sysBranch;
+    private int isNeed;
+
+    public int getIsNeed() {
+        return isNeed;
+    }
+
+    public void setIsNeed(int isNeed) {
+        this.isNeed = isNeed;
+    }
 
     public String getSysBranch() {
         return sysBranch;
@@ -34,6 +43,17 @@ public class ServerBeans {
         this.id = id;
         this.serverName = serverName;
         this.taskId = taskId;
+    }
+
+    public ServerBeans(Long id, String serverName, String taskId, String addressees,Long updateTime,String sysBranch,int isNeed)
+    {
+        this.sysBranch = sysBranch;
+        this.addressees = addressees;
+        this.id = id;
+        this.serverName = serverName;
+        this.taskId = taskId;
+        this.updateTime = updateTime;
+        this.isNeed = isNeed;
     }
 
     public ServerBeans(Long id, String serverName, String taskId, String addressees,Long updateTime,String sysBranch)

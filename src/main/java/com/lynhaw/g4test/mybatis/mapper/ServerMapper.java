@@ -18,7 +18,7 @@ public interface ServerMapper {
     public List<ServerBeans> selectInfolimit(@Param("limitStart") int limitStart, @Param("limitEnd") int limitEnd);
     public List<ServerBeans> selectInfobyname(@Param("serverNameInfo") String serverNameInfo);
     public ServerBeans selectInfobytaskId(@Param("taskId") String taskId);
-    public int updateInfoBytaskId(@Param("taskId") String taskId,@Param("sysBranch") String sysBranch, @Param("id") int id);
+    public int updateInfoBytaskId(@Param("taskId") String taskId,@Param("sysBranch") String sysBranch,@Param("isneed") int isneed, @Param("id") int id);
     public int insertSysInfo(ServerBeans serverBeans);
     public int findsyscount();
     public int updateInfo(ServerBeans serverBeans);
