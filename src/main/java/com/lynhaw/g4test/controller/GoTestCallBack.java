@@ -53,10 +53,12 @@ public class GoTestCallBack {
             String addressees = sysInfoServiceImpl.getInfobytaskId(taskId).getAddressees();
             String sysBranch = sysInfoServiceImpl.getInfobytaskId(taskId).getSysBranch();
             String serverName = sysInfoServiceImpl.getInfobytaskId(taskId).getServerName();
+            int isNeed = sysInfoServiceImpl.getInfobytaskId(taskId).getIsNeed();
             logger.info("获取到的收件人信息为:"+addressees);
             logger.info("获取到的服务名称为:"+serverName);
             logger.info("获取到的服务分支为:"+sysBranch);
-            handleResponse.encapsuReportDetail(sysBranch,responseResult);
+            logger.info("获取到的服务是否需要检验接口覆盖度为:"+isNeed);
+            handleResponse.encapsuReportDetail(sysBranch,responseResult,isNeed);
             sendEmailTest.sendMail(addressees,serverName);
         }
 //        callBackResponse.setEmailSender(getProperties.emailSender);
