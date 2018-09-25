@@ -42,7 +42,19 @@ public class HandleResponse {
                 "        <title>%s</title> \n" +
                 "        <style type=\"text/css\"> \n" +
                 "            td{ width:40px; height:50px;text-align: center;}  p.margin {margin-left:200px;}\n" +
-                "        </style> \n" +
+                "        </style> \n" +"<script type=\"text/javascript\" src=\"http://www.sz886.com/js/jquery-1.9.1.min.js\"></script>\n" +
+                "<script type=\"text/javascript\">\n" +
+                "$(document).ready(function(e) { \n" +
+                "    $(\".btn\").click(function(){\n" +
+                "         if(!$(\".div\").is(\":visible\")){\n" +
+                "          $(\".div\").show(); \n" +
+                "         }else{ \n" +
+                "          $(\".div\").hide(); \n" +
+                "        }\n" +
+                "    });\n" +
+                "       \n" +
+                "});\n" +
+                "</script>"+
                 "    </head> \n" +
                 "    <body> ",titles);
         return title;
@@ -67,6 +79,38 @@ public class HandleResponse {
                 "                <p class=\"margin\" ><strong>测试详情如下：</strong></p>  </div> ",sysBranch,timeStamp2Date(starttime),timeStamp2Date(endtime),(endtime-starttime),passge,fail);
         return summary;
     }
+
+    public String ReportNoCoverHeader(String noCover)
+    {
+        String noCoverList = "<!doctype html>\n" +
+                "<html>\n" +
+                "<head>\n" +
+                "<meta charset=\"utf-8\">\n" +
+                "<title>div5px</title>\n" +
+                "<script type=\"text/javascript\" src=\"http://www.sz886.com/js/jquery-1.9.1.min.js\"></script>\n" +
+                "<script type=\"text/javascript\">\n" +
+                "$(document).ready(function(e) { \n" +
+                "    $(\".btn\").click(function(){\n" +
+                "         if(!$(\".div\").is(\":visible\")){\n" +
+                "          $(\".div\").show(); \n" +
+                "         }else{ \n" +
+                "          $(\".div\").hide(); \n" +
+                "        }\n" +
+                "    });\n" +
+                "       \n" +
+                "});\n" +
+                "</script>\n" +
+                "</head>\n" +
+                " \n" +
+                "<body>\n" +
+                "<p class=\"btn\"><strong>>未覆盖的接口如下:<strong></p>\n" +
+                "<hr/>\n" +
+                "<p class=\"div\" hidden>"+noCover+"</p>\n" +
+                "</body>\n" +
+                "</html>";
+        return noCoverList;
+    }
+
 
     public String reportResultHandle(String result)
     {
@@ -117,11 +161,43 @@ public class HandleResponse {
         return responseResultPrintWriter;
     }
 
-    public void encapsuReportDetail(String sysBranch,String obtainedResults)
+    public void encapsuReportDetail(String sysBranch,String obtainedResults,int isNeed)
     {
         logger.info("测试分支为:"+sysBranch);
         logger.info("返回包:"+obtainedResults);
+        logger.info("获取到的服务是否需要检验接口覆盖度为:"+isNeed);
         File responseResultFile=new File("/home/webapps/yanxuan-g4test/responseResult.html");
+//        File responseResultFile=new File("E:\\develop\\apache-tomcat-8.5.24\\bin\\responseResult.html");
+        String coverData = "";
+        if (isNeed==1)
+        {
+            logger.info("进入接口覆盖处理");
+//            File coverInterFile = new File("E:\\resultfile\\result.html");
+            File coverInterFile = new File("/home/webapps/yanxuan-g4test/result.html");
+            if (coverInterFile.isFile()&&coverInterFile.exists())
+            {
+                try {
+                    InputStreamReader coverInterFileData = new InputStreamReader(new FileInputStream(coverInterFile),"utf-8");
+                    BufferedReader coverInterReader = new BufferedReader(coverInterFileData);
+                    String lineTxt = null;
+                    while((lineTxt=coverInterReader.readLine())!=null)
+                    {
+                        coverData = coverData + lineTxt;
+                        logger.info("每行的覆盖接口情况为:"+coverData);
+                    }
+                    coverInterReader.close();
+                    coverInterFileData.close();
+                    logger.info("获取到的接口覆盖度内容为:"+coverData);
+                } catch (UnsupportedEncodingException e) {
+                    e.printStackTrace();
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+            }
+        }
 //        File responseResultFile=new File("responseResult.html");
         try {
             String checkResult = "fail";
@@ -129,8 +205,8 @@ public class HandleResponse {
             BufferedWriter responseResultFileWriter = new BufferedWriter (new OutputStreamWriter (new FileOutputStream (responseResultFile,false),"UTF-8"));
             PrintWriter responseResultPrintWriter = new PrintWriter(responseResultFileWriter);
             responseResultPrintWriter.println(ReportFileHeader("接口测试结果"));
-
             JSONObject obtainedResultsObj=JSON.parseObject(obtainedResults);
+            responseResultPrintWriter.println(coverData);
             if (obtainedResultsObj.getInteger("code")==200)
             {
                 responseResultPrintWriter.println(header);
@@ -163,11 +239,10 @@ public class HandleResponse {
             e.printStackTrace();
         }
     }
-
     public static void main(String[] args)
     {
         HandleResponse handleResponse = new HandleResponse();
 //        handleResponse.encapsuReportDetail("{\"code\":200,\"msg\":\"OK\",\"data\":{\"id\":704,\"suiteName\":\"tob选仓临时测试集\",\"sceneInfo\":[{\"id\":2557,\"name\":\"tob订单调度成功\",\"createUser\":\"hzhuyuanyuan@corp.netease.com\",\"createTime\":1524809285000,\"subProjectId\":2196,\"check\":1},{\"id\":2541,\"name\":\"toB选仓\",\"createUser\":\"hzzhengyunpeng@corp.netease.com\",\"createTime\":1524731475000,\"subProjectId\":2196,\"check\":0}],\"apiCaseInfo\":[{\"id\":41641,\"name\":\"tob选仓失败\",\"createUser\":\"hzhuyuanyuan@corp.netease.com\",\"createTime\":1524722301000,\"subProjectId\":2196,\"url\":\"/smart-ipc/api/v1/omsapi/mps/receiveMsg\",\"check\":0}],\"cid\":\"1i1284\",\"executorName\":\"smartipc测试环境\",\"startDate\":1524906981999,\"endDate\":1524906987474,\"userName\":\"hzhuyuanyuan@corp.netease.com\",\"taskId\":\"d147d0eb-4ac4-11e8-a4d4-6d0a0c2e1ab9\",\"elapse\":5475}}");
-        handleResponse.encapsuReportDetail("test","{\"code\":200,\"msg\":\"OK\",\"data\":{\"id\":704,\"suiteName\":\"tob选仓临时测试集\",\"sceneInfo\":[],\"apiCaseInfo\":[{\"id\":41641,\"name\":\"tob选仓失败\",\"createUser\":\"hzhuyuanyuan@corp.netease.com\",\"createTime\":1524722301000,\"subProjectId\":2196,\"url\":\"/smart-ipc/api/v1/omsapi/mps/receiveMsg\",\"check\":1}],\"cid\":\"1i1284\",\"executorName\":\"smartipc测试环境\",\"startDate\":1524906981999,\"endDate\":1524906987474,\"userName\":\"hzhuyuanyuan@corp.netease.com\",\"taskId\":\"d147d0eb-4ac4-11e8-a4d4-6d0a0c2e1ab9\",\"elapse\":5475}}");
+        handleResponse.encapsuReportDetail("test","{\"code\":200,\"msg\":\"OK\",\"data\":{\"id\":704,\"suiteName\":\"tob选仓临时测试集\",\"sceneInfo\":[],\"apiCaseInfo\":[{\"id\":41641,\"name\":\"tob选仓失败\",\"createUser\":\"hzhuyuanyuan@corp.netease.com\",\"createTime\":1524722301000,\"subProjectId\":2196,\"url\":\"/smart-ipc/api/v1/omsapi/mps/receiveMsg\",\"check\":1}],\"cid\":\"1i1284\",\"executorName\":\"smartipc测试环境\",\"startDate\":1524906981999,\"endDate\":1524906987474,\"userName\":\"hzhuyuanyuan@corp.netease.com\",\"taskId\":\"d147d0eb-4ac4-11e8-a4d4-6d0a0c2e1ab9\",\"elapse\":5475}}",1);
     }
 }

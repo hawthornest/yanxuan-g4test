@@ -2,6 +2,7 @@ package com.lynhaw.g4test.controller;
 
 import com.alibaba.fastjson.JSONObject;
 import com.lynhaw.g4test.service.PublicMethod;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,12 +16,13 @@ import java.util.logging.Logger;
 
 @RestController
 public class NoCoverInterface {
+    @Autowired
     PublicMethod publicMethod;
     Logger logger = Logger.getLogger(String.valueOf(NoCoverInterface.class));
     @GetMapping("/noCoverInterface")
     public String noCoverInterface(String requestUrl,String testId)
     {
-        PublicMethod publicMethod = new PublicMethod();
+//        PublicMethod publicMethod = new PublicMethod();
         logger.info(String.format("输入的请求参数为:requestUrl=%s&testId=%s",requestUrl,testId));
         int code = publicMethod.ReportNoCoverHeader(requestUrl,testId);
         JSONObject noCoverInterJson = new JSONObject();

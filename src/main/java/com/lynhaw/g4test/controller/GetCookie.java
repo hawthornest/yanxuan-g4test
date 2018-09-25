@@ -24,4 +24,5 @@ public class GetCookie {
         String logCookie = logIn.logInRequset(userName,passWord);
         return logCookie;
     }
+
 }
