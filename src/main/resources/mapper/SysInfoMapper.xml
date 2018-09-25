@@ -14,8 +14,14 @@
         SELECT * FROM TB_YX_GOTEST_SERVER_INFO WHERE taskId = '${taskId}'
     </select>
     <update id="updateInfoBytaskId" parameterType="string">
-        UPDATE TB_YX_GOTEST_SERVER_INFO SET taskId = '${taskId}' WHERE id=#{id}
+        UPDATE TB_YX_GOTEST_SERVER_INFO SET taskId = '${taskId}',sysBranch = '${sysBranch}',isNeed=#{Need} WHERE id=#{id}
     </update>
+    <update id="updateInfo" parameterType="com.lynhaw.g4test.mybatis.beans.ServerBeans">
+        UPDATE TB_YX_GOTEST_SERVER_INFO SET serverName = '${serverName}',addressees='${addressees}' WHERE id=#{id}
+    </update>
+    <delete id="deleteInfo" parameterType="java.lang.Long">
+        DELETE FROM TB_YX_GOTEST_SERVER_INFO WHERE id=#{id}
+    </delete>
     <insert id="insertSysInfo" parameterType="com.lynhaw.g4test.mybatis.beans.ServerBeans">
         INSERT INTO TB_YX_GOTEST_SERVER_INFO (serverName,taskId,addressees) values (#{serverName,jdbcType=VARCHAR},#{taskId,jdbcType=VARCHAR},#{addressees,jdbcType=VARCHAR})
     </insert>
