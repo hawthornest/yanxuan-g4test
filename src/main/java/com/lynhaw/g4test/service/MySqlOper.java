@@ -100,13 +100,29 @@ public class MySqlOper {
                     try {
                         con = DriverManager.getConnection(sqlInfoBeans.get(0).getSqlconninfo(), sqlInfoBeans.get(0).getSqlusername(), sqlInfoBeans.get(0).getSqlpassword());
                         Statement stmt = con.createStatement();
-                        int resultData = stmt.executeUpdate(writeSql);//执行sql语句
-                        if (resultData > 0) {
-                            jsonResult.put("code", 200);
+                        int resultData = 0;
+                        boolean resultCode = true;
+                        String[] writeSqls = writeSql.split(";");
+                        for (int writeSqlLength=0;writeSqlLength<writeSqls.length;writeSqlLength++)
+                        {
+                            resultData += stmt.executeUpdate(writeSqls[writeSqlLength]);//执行sql语句
+                            if (resultData==0)
+                            {
+                                resultCode = false;
+                            }
+                        }
+                        if ((resultData > 0)&&resultCode==false) {
+                            jsonResult.put("code", 300);
                             jsonResult.put("data", resultData);
-                        } else {
+                            jsonResult.put("errorMsg", "部分语句写数据库失败");
+                        } else if(resultData==0) {
                             jsonResult.put("code", 400);
                             jsonResult.put("data", "写数据库失败");
+                        }
+                        else if((resultData > 0)&&resultCode==true)
+                        {
+                            jsonResult.put("code", 200);
+                            jsonResult.put("data", resultData);
                         }
                         con.close();
                     } catch (SQLException e) {

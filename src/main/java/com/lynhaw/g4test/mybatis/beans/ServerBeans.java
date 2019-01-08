@@ -13,6 +13,34 @@ public class ServerBeans {
     private String sysBranch;
     private int isNeed;
 
+    public String getCommitInfo() {
+        return commitInfo;
+    }
+
+    public void setCommitInfo(String commitInfo) {
+        this.commitInfo = commitInfo;
+    }
+
+    private int callback;
+    private String domainName;
+    private String commitInfo;
+
+    public int getCallback() {
+        return callback;
+    }
+
+    public void setCallback(int callback) {
+        this.callback = callback;
+    }
+
+    public String getDomainName() {
+        return domainName;
+    }
+
+    public void setDomainName(String domainName) {
+        this.domainName = domainName;
+    }
+
     public int getIsNeed() {
         return isNeed;
     }
@@ -45,7 +73,7 @@ public class ServerBeans {
         this.taskId = taskId;
     }
 
-    public ServerBeans(Long id, String serverName, String taskId, String addressees,Long updateTime,String sysBranch,int isNeed)
+    public ServerBeans(Long id, String serverName, String taskId, String addressees,Long updateTime,String sysBranch,int isNeed,int callback,String commitInfo)
     {
         this.sysBranch = sysBranch;
         this.addressees = addressees;
@@ -54,9 +82,12 @@ public class ServerBeans {
         this.taskId = taskId;
         this.updateTime = updateTime;
         this.isNeed = isNeed;
+        this.callback = callback;
+        this.commitInfo = commitInfo;
     }
 
-    public ServerBeans(Long id, String serverName, String taskId, String addressees,Long updateTime,String sysBranch)
+
+    public ServerBeans(Long id, String serverName, String taskId, String addressees,Long updateTime,String sysBranch,int isNeed,String domainName,int callback,String commitInfo)
     {
         this.sysBranch = sysBranch;
         this.addressees = addressees;
@@ -64,6 +95,20 @@ public class ServerBeans {
         this.serverName = serverName;
         this.taskId = taskId;
         this.updateTime = updateTime;
+        this.isNeed = isNeed;
+        this.domainName = domainName;
+        this.commitInfo = commitInfo;
+    }
+
+    public ServerBeans(Long id, String serverName, String taskId, String addressees,Long updateTime,String sysBranch,int callback,String commitInfo)
+    {
+        this.sysBranch = sysBranch;
+        this.addressees = addressees;
+        this.id = id;
+        this.serverName = serverName;
+        this.taskId = taskId;
+        this.updateTime = updateTime;
+        this.commitInfo = commitInfo;
     }
 
     public ServerBeans(String serverName, String addressees)

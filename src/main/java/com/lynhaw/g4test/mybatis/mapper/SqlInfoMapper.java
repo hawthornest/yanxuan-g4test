@@ -24,4 +24,5 @@ public interface  SqlInfoMapper {
     public int deleteSql(@Param("id")int id);
     public int updateSql(SqlInfoBean sqlInfoBean);
 
+
 }

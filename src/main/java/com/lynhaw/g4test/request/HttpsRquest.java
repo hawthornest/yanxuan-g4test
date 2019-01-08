@@ -1,5 +1,6 @@
 package com.lynhaw.g4test.request;
 
+import com.lynhaw.g4test.service.PublicMethod;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
@@ -7,6 +8,7 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.util.EntityUtils;
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.io.PrintWriter;
@@ -19,6 +21,8 @@ import java.security.MessageDigest;
  */
 @Service
 public class HttpsRquest {
+    @Autowired
+    PublicMethod publicMethod;
     Logger logger = Logger.getLogger(HttpsRquest.class);
     private String token = "7a906a1b-835c-4b21-ac61-97231a2bb4b0";
     private String key = "88f9af6bd9b268ae";
@@ -40,59 +44,68 @@ public class HttpsRquest {
         return toHexString(messageDigest).toLowerCase();
     }
 
-
-
     public String httpsCallBackPost(String taskId)
     {
-
-        String result = "";
-        try {
-            HttpClient httpClient = new SSLClient();
-            Long timeStamp = System.currentTimeMillis();
-            String requestContent = "{\"timestamp\": "+timeStamp+", \"taskId\": \""+taskId+"\"}";
-            String sign = paramMd5(requestContent+"|"+key);
-            HttpPost httpPost = new HttpPost("https://gotest.hz.netease.com/open/api/history/detail");
-            httpPost.setHeader("Content-Type", "application/json");
-            httpPost.setHeader("token",token);
-            httpPost.setHeader("sign",sign);
-            StringEntity entity = new StringEntity(requestContent);
-            logger.info("请求参数为:"+requestContent+",签名为:"+sign);
-            httpPost.setEntity(entity);
-            HttpResponse response = httpClient.execute(httpPost);
-            logger.info("返回包为:"+response);
-            if(response != null){
-                HttpEntity resEntity = response.getEntity();
-                if(resEntity != null){
-                    result = EntityUtils.toString(resEntity,"utf-8");
-                }
-            }
-            System.out.println(result);
-            return result;
-        } catch (Exception e) {
-            OperaException(e);
-            return null;
-        }
+        logger.info("开始进入gotest回调通知后,获取测试集执行结果");
+        Long timeStamp = System.currentTimeMillis();
+        String requestContent = "{\"timestamp\": "+timeStamp+", \"taskId\": \""+taskId+"\"}";
+        String requestUrl = "https://gotest.hz.netease.com/open/api/history/detail";
+        String callBackPostResponse = httpsGotestRequest(requestUrl,requestContent,timeStamp);
+        logger.info("获取到的返回包为:"+callBackPostResponse);
+        logger.info("结束gotest回调通知信息获取");
+        return callBackPostResponse;
     }
 
-    public void OperaException(Exception e)
+    public String httpsTaskRerun(String taskId)
     {
-        StringWriter sw = new StringWriter();
-        PrintWriter pw = new PrintWriter(sw);
-        e.printStackTrace(pw);
-        pw.flush();
-        sw.flush();
-        logger.error(sw.toString());
+        logger.info("gotest失败重试--------------start");
+        Long timeStamp = System.currentTimeMillis();
+        String requestContent = "{\"timestamp\": "+timeStamp+", \"taskId\": \""+taskId+"\"}";
+        logger.info("请求参数为:"+requestContent);
+        String requestUrl = "https://gotest.hz.netease.com/open/api/task/rerun";
+        String reRunResponse = httpsGotestRequest(requestUrl,requestContent,timeStamp);
+        logger.info("获取到的返回包为:"+reRunResponse);
+        logger.info("gotest失败重试--------------end");
+        return reRunResponse;
     }
 
     public String httpsTaskRunPost(String testId, String environmentId, String callBackUrl)
     {
+        logger.info("进入执行测试集");
+        Long timeStamp = System.currentTimeMillis();
+        String requestUrl = "https://gotest.hz.netease.com/open/api/task/suite/run";
+        String requestContent;
+        if (callBackUrl==null||callBackUrl.equals(""))
+        {
+            requestContent = "{\"id\": \""+testId+"\", \"cid\": \""+environmentId+"\",\"replace\":false,\"timestamp\":"+timeStamp+"}";
+        }
+        else
+        {
+            requestContent = "{\"id\": \""+testId+"\", \"cid\": \""+environmentId+"\",\"webhook\":\""+callBackUrl+"\",\"replace\":false,\"timestamp\":"+timeStamp+"}";
+        }
+        String taskRunPostResponse = httpsGotestRequest(requestUrl,requestContent,timeStamp);
+        logger.info("结束执行测试集");
+        return taskRunPostResponse;
+    }
+
+    public String httpsTaskSuiteInfo(String testId)
+    {
+        logger.info("进入获取测试集接口信息");
+        Long timeStamp = System.currentTimeMillis();
+        String requestContent ="{\"id\":\""+testId+"\",\"timestamp\": "+timeStamp+"}";
+        String requestUrl = "https://gotest.hz.netease.com/open/api/suite/projectapi/coverage/info";
+        String taskSuiteInfoResponse = httpsGotestRequest(requestUrl,requestContent,timeStamp);
+        logger.info("结束获取测试集接口信息");
+        return taskSuiteInfoResponse;
+    }
+
+    public String httpsGotestRequest(String requestUrl,String requestContent,Long timeStamp)
+    {
         String result = "";
         try {
             HttpClient httpClient = new SSLClient();
-            Long timeStamp = System.currentTimeMillis();
-            String requestContent = "{\"id\": \""+testId+"\", \"cid\": \""+environmentId+"\",\"webhook\":\""+callBackUrl+"\",\"replace\":false,\"timestamp\":"+timeStamp+"}";
             String sign = paramMd5(requestContent+"|"+key);
-            HttpPost httpPost = new HttpPost("https://gotest.hz.netease.com/open/api/task/suite/run");
+            HttpPost httpPost = new HttpPost(requestUrl);
             httpPost.setHeader("Content-Type", "application/json");
             httpPost.setHeader("token",token);
             httpPost.setHeader("sign",sign);
@@ -100,27 +113,28 @@ public class HttpsRquest {
             logger.info("请求参数为:"+requestContent+",签名为:"+sign);
             httpPost.setEntity(entity);
             HttpResponse response = httpClient.execute(httpPost);
-            logger.info("返回包为:"+response);
             if(response != null){
                 HttpEntity resEntity = response.getEntity();
                 if(resEntity != null){
                     result = EntityUtils.toString(resEntity,"utf-8");
                 }
             }
+            logger.info("返回包为:"+result);
             System.out.println(result);
             return result;
         }catch (Exception e) {
-            OperaException(e);
+            publicMethod.OperaException(e);
             return null;
         }
     }
 
+
     public static void main(String[] args) {
-        String taskId = "d147d0eb-4ac4-11e8-a4d4-6d0a0c2e1ab9";
+        String taskId = "0ba8f9a3-acc8-11e8-b283-87b43dd2860e";
         HttpsRquest httpsRquest = new HttpsRquest();
 //        String responseResult = httpsRquest.httpsCallBackPost(taskId);
 //        HandleResponse handleResponse = new HandleResponse();
 //        handleResponse.encapsuReportDetail(responseResult);
-        httpsRquest.httpsTaskRunPost("704","1i1284","http://smartipc.you.163.com/smart-ipc");
+        httpsRquest.httpsTaskSuiteInfo("1024");
     }
 }

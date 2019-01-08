@@ -29,25 +29,41 @@ public class TaskRun {
     @ApiOperation(value="执行测试用例", notes="根据测试集id执行用例")
 //    @ApiImplicitParam(name = "testId", value = "测试集id", required = true, dataType = "String")
     @GetMapping("/yanxuan/taskrun")
-    public String executeTtestCase(String testId, String environmentId, String callBackUrl,int sysId,String sysBranch,String iSNeed,String swaggInfo)
+    public String executeTtestCase(String testId, String environmentId, String callBackUrl,int sysId,String sysBranch,String iSNeed,String swaggInfo,String commitInfo)
     {
         MDC.put("traceId", UUID.randomUUID().toString());
         CallBackResponse implementRespons = new CallBackResponse();
         HttpsRquest httpsRquest = new HttpsRquest();
         CommonEnum commonEnum = CommonEnum.valueOf(iSNeed.toUpperCase());
         int isNeed = 0;
+        PublicMethod publicMethod = new PublicMethod();
+        logger.info("输入的覆盖度检查值为:"+iSNeed);
         switch (commonEnum)
         {
             case NONEED:
                 break;
             case NEED:
+                logger.info("场景为需要接口覆盖度,不需要代码覆盖度");
                 isNeed = 1;
-                PublicMethod publicMethod = new PublicMethod();
                 logger.info(String.format("输入的请求参数为:requestUrl=%s&testId=%s",swaggInfo,testId));
                 int code = publicMethod.ReportNoCoverHeader(swaggInfo,testId);
                 JSONObject noCoverInterJson = new JSONObject();
                 noCoverInterJson.put("code",code);
                 logger.info(String.format("返回包为:%s",noCoverInterJson.toJSONString()));
+                break;
+            case NEEDANDCOVER:
+                isNeed = 2;
+                logger.info(String.format("输入的请求参数为:requestUrl=%s&testId=%s",swaggInfo,testId));
+                logger.info("场景为需要接口覆盖度和代码覆盖度");
+                int needCovercode = publicMethod.ReportNoCoverHeader(swaggInfo,testId);
+                JSONObject noCoverInter = new JSONObject();
+                noCoverInter.put("code",needCovercode);
+                logger.info(String.format("返回包为:%s",noCoverInter.toJSONString()));
+                break;
+            case NONEEDANDCOVER:
+                logger.info("场景为不需要接口覆盖度,需要代码覆盖度");
+                isNeed = 3;
+                break;
         }
         String runResponse = httpsRquest.httpsTaskRunPost(testId,environmentId,callBackUrl);
         JSONObject runResponseJson = JSON.parseObject(runResponse);
@@ -60,6 +76,15 @@ public class TaskRun {
         int updateResult = sysInfoServiceImpl.updateInfo(taskId,sysBranch,isNeed,sysId);
         logger.info("当前执行的测试分支为:"+sysBranch);
         logger.info("更新数据库结果为:"+updateResult);
+        logger.info("更新数据库回调状态结果为:"+sysInfoServiceImpl.updateCallBackStatusByTaskId(1,taskId));
+        if (commitInfo==null || commitInfo.equals(""))
+        {
+            logger.info("更新数据库git日志结果为:"+sysInfoServiceImpl.updateCommitInfoByTaskId("commitInfo",taskId));
+        }
+        else
+        {
+            logger.info("更新数据库git日志结果为:"+sysInfoServiceImpl.updateCommitInfoByTaskId(commitInfo,taskId));
+        }
         implementRespons.setCode(responseData);
         implementRespons.setMsg(errorMsg);
         implementRespons.setTaskId(taskId);

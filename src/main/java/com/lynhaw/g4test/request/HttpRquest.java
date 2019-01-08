@@ -13,6 +13,7 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
@@ -29,6 +30,7 @@ import java.util.Map;
  */
 @Service
 public class HttpRquest {
+    @Autowired
     PublicMethod publicMethod;
     Logger logger = Logger.getLogger(HttpRquest.class);
     public String httpGet(String requestUrl)

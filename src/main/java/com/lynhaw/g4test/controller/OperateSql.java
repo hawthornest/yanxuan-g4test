@@ -3,8 +3,12 @@ package com.lynhaw.g4test.controller;
 import com.alibaba.fastjson.JSONObject;
 import com.lynhaw.g4test.mybatis.SqlInfoService.SysInfoServiceImpl;
 import com.lynhaw.g4test.mybatis.beans.ServerBeans;
+import com.lynhaw.g4test.mybatis.beans.SqlInfoBean;
+import org.apache.log4j.Logger;
+import org.apache.log4j.MDC;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -17,6 +21,7 @@ import java.util.List;
 public class OperateSql {
     @Autowired
     private SysInfoServiceImpl sysInfoServiceImpl;
+    Logger logger = Logger.getLogger(OperateSql.class);
     @GetMapping("/yanxuan/getInfolimit")
     public String getInfolimit(int limitStart, int limitEnd){
         List<ServerBeans> ServerBeans = sysInfoServiceImpl.getInfolimit(limitStart,limitEnd);
@@ -26,6 +31,17 @@ public class OperateSql {
         jsonSysInfo.put("data",ServerBeans);
         jsonSysInfo.put("code",200);
         return jsonSysInfo.toJSONString();
+    }
+
+    @RequestMapping("/getUpdateTimeById")
+    public  String getUpdateTimeById(int sysId)
+    {
+        Long updateTime = sysInfoServiceImpl.findUpdateTimeById(sysId);
+        logger.info("查询到的更新时间为:"+updateTime);
+        JSONObject jsonResult = new JSONObject();
+        jsonResult.put("code",200);
+        jsonResult.put("updateTime",updateTime);
+        return jsonResult.toJSONString();
     }
 
     @GetMapping("/yanxuan/findsyscount")

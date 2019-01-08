@@ -4,15 +4,24 @@ package com.lynhaw.g4test.service;
 import com.lynhaw.g4test.getproperties.GetProperties;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.FileSystemResource;
+import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
 
+import javax.activation.DataHandler;
+import javax.activation.DataSource;
+import javax.activation.FileDataSource;
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
+import javax.mail.internet.MimeMultipart;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Properties;
 
 
@@ -32,8 +41,13 @@ public class SendEmail {
         // 发送邮件对方的邮箱
          receiveMailAccount = receiveMailAccount.trim();
         MimeMessage message = new MimeMessage(session);
+        Map<String, String> imagesMap = new HashMap<>();
+        imagesMap.put("redbar","E:\\StudySource\\yanxuan-g4test\\jacoco-resources\\redbar.gif");
+        imagesMap.put("greenbar","E:\\StudySource\\yanxuan-g4test\\jacoco-resources\\greenbar.gif");
         // 设置发送邮件地址,param1 代表发送地址 param2 代表发送的名称(任意的) param3 代表名称编码方式
         message.setFrom(new InternetAddress(ownEmailAccount, "严选自动化测试", "utf-8"));
+        FileSystemResource redbar = new FileSystemResource(new File("E:\\StudySource\\yanxuan-g4test\\jacoco-resources\\redbar.gif"));
+        FileSystemResource greenbar = new FileSystemResource(new File("E:\\StudySource\\yanxuan-g4test\\jacoco-resources\\greenbar.gif"));
         if(receiveMailAccount.split(",").length==1)
         {
             message.setRecipient(Message.RecipientType.TO, new InternetAddress(receiveMailAccount.split(",")[0], receiveMailAccount, "utf-8"));
@@ -51,7 +65,30 @@ public class SendEmail {
         message.setSubject(serverName+"自动化测试结果");
         // 设置邮件内容
         message.setContent(readToString("/home/webapps/yanxuan-g4test/responseResult.html"), "text/html;charset=utf-8");
-//        message.setContent(readToString("responseResult.html"), "text/html;charset=utf-8");
+//            message.setContent(readToString("responseResult.html"), "text/html;charset=utf-8");
+//        MimeMessageHelper helper = new MimeMessageHelper(message, true);
+//        helper.addInline("redbar", redbar);
+//        helper.addInline("greenbar", greenbar);
+
+
+        /*邮件加图片的实现方式*/
+//        MimeMultipart msgMultipart = new MimeMultipart("mixed");//混合的组合关系
+//        message.setContent(msgMultipart);
+//        MimeBodyPart content = new MimeBodyPart();
+//        msgMultipart.addBodyPart(content);
+//        MimeMultipart bodyMultipart  = new MimeMultipart("related");
+//        content.setContent(bodyMultipart);
+//        MimeBodyPart htmlPart = new MimeBodyPart();
+//        MimeBodyPart imgPart = new MimeBodyPart();
+//        bodyMultipart.addBodyPart(htmlPart);
+//        bodyMultipart.addBodyPart(imgPart);
+//        DataSource imgds = new FileDataSource(new File("E:\\StudySource\\yanxuan-g4test\\jacoco-resources\\redbar.gif"));
+//        DataHandler imgdh = new DataHandler(imgds);
+//        imgPart.setDataHandler(imgdh);
+//        imgPart.setHeader("Content-Location", "redbar");
+//        htmlPart.setContent(readToString("responseResult.html"), "text/html;charset=utf-8");
+        /*邮件加图片的实现方式*/
+
         // 设置发送时间
         message.setSentDate(new Date());
         // 保存上面的编辑内容
@@ -87,6 +124,8 @@ public class SendEmail {
             trans.connect(getProperties.emailSender.trim(), getProperties.emailPassword.trim());
             logger.info("邮件发件人为:"+getProperties.emailSender.trim());
             logger.info("邮件发件人密码为:"+getProperties.emailPassword.trim());
+            logger.info("message is :" + message);
+            logger.info("trans is :" + trans);
             trans.sendMessage(message, message.getAllRecipients());
             trans.close();
         } catch (NoSuchProviderException e) {

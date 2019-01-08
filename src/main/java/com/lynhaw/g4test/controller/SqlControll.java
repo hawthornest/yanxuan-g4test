@@ -38,7 +38,6 @@ public class SqlControll {
         return sqlInfoBeans;
     }
 
-
     @ApiOperation(value="根据连接信息查询数据库信息", notes="")
     @RequestMapping("/getSqlInfobyinfo")
     public String getSqlInfobyinfo(String sqlconninfo)

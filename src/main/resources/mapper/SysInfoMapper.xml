@@ -7,6 +7,9 @@
     <select id="findsyscount" resultType="java.lang.Integer">
         select count(1) from TB_YX_GOTEST_SERVER_INFO
     </select>
+    <select id="findUpdateTime" resultType="java.lang.Long">
+        select updateTime from TB_YX_GOTEST_SERVER_INFO where id=#{id}
+    </select>
     <select id="selectInfolimit" resultType="com.lynhaw.g4test.mybatis.beans.ServerBeans">
         SELECT * FROM TB_YX_GOTEST_SERVER_INFO limit #{limitStart},#{limitEnd}
     </select>
@@ -18,6 +21,15 @@
     </update>
     <update id="updateInfo" parameterType="com.lynhaw.g4test.mybatis.beans.ServerBeans">
         UPDATE TB_YX_GOTEST_SERVER_INFO SET serverName = '${serverName}',addressees='${addressees}' WHERE id=#{id}
+    </update>
+    <update id="updateCallBackTime" parameterType="com.lynhaw.g4test.mybatis.beans.ServerBeans">
+        UPDATE TB_YX_GOTEST_SERVER_INFO SET updateTime = '${updateTime}' WHERE taskId = '${taskId}' and id>0
+    </update>
+    <update id="updateCallBackStatus" parameterType="com.lynhaw.g4test.mybatis.beans.ServerBeans">
+        UPDATE TB_YX_GOTEST_SERVER_INFO SET callback = '${callback}' WHERE taskId = '${taskId}' and id>0
+    </update>
+    <update id="updateCommitInfo" parameterType="com.lynhaw.g4test.mybatis.beans.ServerBeans">
+        UPDATE TB_YX_GOTEST_SERVER_INFO SET commitInfo = '${commitInfo}' WHERE taskId = '${taskId}' and id>0
     </update>
     <delete id="deleteInfo" parameterType="java.lang.Long">
         DELETE FROM TB_YX_GOTEST_SERVER_INFO WHERE id=#{id}

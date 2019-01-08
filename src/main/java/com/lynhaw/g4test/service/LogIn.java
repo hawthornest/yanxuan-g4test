@@ -26,6 +26,7 @@ import java.util.List;
 public class LogIn {
     @Autowired
     HttpsRquest httpsRquest;
+    PublicMethod publicMethod;
     private String client_id = "28b3a9985fe411e7b1295cf3fc96a72c";
     Logger logger = Logger.getLogger(LogIn.class);
 
@@ -93,7 +94,7 @@ public class LogIn {
             logInResponse.setYx_username(yx_username);
         } catch (Exception e) {
 //            HttpsRquest httpsRquest = new HttpsRquest();
-            httpsRquest.OperaException(e);
+            publicMethod.OperaException(e);
         }
         finally {
             logger.info("cookie返回包为:"+JSON.toJSONString(logInResponse));

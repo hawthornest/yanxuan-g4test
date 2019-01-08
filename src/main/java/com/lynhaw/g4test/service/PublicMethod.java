@@ -103,7 +103,8 @@ public class PublicMethod {
     public int ReportNoCoverHeader(String requestUrl,String testId)
     {
         ArrayList<String> interfaceServers = interfaceContrast(requestUrl,testId);
-        File interfaceContrastFile = new File("E:\\resultfile\\result.html");
+//        File interfaceContrastFile = new File("E:\\resultfile\\result.html");
+        File interfaceContrastFile = new File("/home/webapps/yanxuan-g4test/result.html");
         try {
             BufferedWriter interfaceContrastFileWriter = new BufferedWriter(new OutputStreamWriter (new FileOutputStream (interfaceContrastFile,false),"UTF-8"));
             PrintWriter responseResultPrintWriter = new PrintWriter(interfaceContrastFileWriter);
@@ -121,9 +122,9 @@ public class PublicMethod {
             {
                 logger.info("gotest测试集未覆盖的接口为:"+noCoverInter);
                 String noCoverList =
-                        "<p class=\"btn\" style=\"margin-left:200px;\"><strong>>未覆盖的接口如下:<strong></p>\n" +
+                        "<p style=\"margin-left:200px;\"><strong>>未覆盖的接口如下:<strong></p>\n" +
                                 "<hr/>\n" +
-                                "<p class=\"div\" hidden style=\"margin-left:200px;\">"+noCoverInter+"</p>\n" +
+                                "<p style=\"margin-left:200px;\">"+noCoverInter+"</p>\n" +
                                 "<hr/>\n";
                 responseResultPrintWriter.println(noCoverList);
             }
