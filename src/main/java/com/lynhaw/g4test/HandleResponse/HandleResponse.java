@@ -77,9 +77,8 @@ public class HandleResponse {
         String coverResult = "";
         String summary = "";
         String speAuthor = "";
-        if (commitInfo.equals("commitInfo"))
+        if (commitInfo.contains("是否正确添加git log"))
         {
-            commitInfo = "未成功获取到提交记录,请查看部署脚本,是否正确添加git log";
             speAuthor = "未成功获取到";
         }
         else

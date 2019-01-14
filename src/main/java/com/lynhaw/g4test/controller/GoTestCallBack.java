@@ -77,8 +77,7 @@ public class GoTestCallBack {
                 logger.info("更新操作时间结果为:"+updateTimeResult);
                 int isNeed = sysInfoServiceImpl.getInfobytaskId(taskId).getIsNeed();
                 String domainName = sysInfoServiceImpl.getInfobytaskId(taskId).getDomainName();
-                String commitInfo = sysInfoServiceImpl.getInfobytaskId(taskId).getCommitInfo().replaceAll(">","&gt;").replaceAll("<","&lt;");
-                logger.info("获取到的代码提交信息为:"+commitInfo);
+                String commitInfo = sysInfoServiceImpl.getInfobytaskId(taskId).getCommitInfo();
                 String speAuthor;
                 if (commitInfo.equals("commitInfo"))
                 {
@@ -89,8 +88,10 @@ public class GoTestCallBack {
                 {
                     logger.info("首次分割[0]:"+commitInfo.split("Author: ")[1].split("Date")[0]);
                     logger.info("首次分割[1]:"+commitInfo.split("Author: ")[2].split("Date")[0]);
-                    speAuthor = commitInfo.split("Author: ")[1].split("Date")[0] + "&" + commitInfo.split("Author: ")[2].split("Date")[0].replaceAll("&gt;",">").replaceAll("&lt;","<");
+                    speAuthor = commitInfo.split("Author: ")[1].split("Date")[0] + "&" + commitInfo.split("Author: ")[2].split("Date")[0];
+                    commitInfo = commitInfo.replaceAll(">","&gt;").replaceAll("<","&lt;");
                 }
+                logger.info("获取到的代码提交信息为:"+commitInfo);
                 logger.info("获取到的收件人信息为:"+addressees);
                 logger.info("获取到的服务名称为:"+serverName);
                 logger.info("获取到的服务分支为:"+sysBranch);
